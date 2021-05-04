@@ -157,6 +157,7 @@ header a{
 .saisie {
    
    font-size: 1.3em;     /*taille de la police saisie par utilisateur*/
+   font-weight: bold;
    height: 50px;
    padding-left: 10px;
    padding-right: 15px;    /*très important !!! vu que tu as décalé le bouton*/
@@ -219,6 +220,16 @@ button:active {                            /*quand on clic*/
    border-radius: 25px / 25px;   /*bordure demi cercle*/
 }
 
+.filtre li:hover {     /*changement de couleur au survol des filtres*/
+	border: #0065fc solid 2px;
+	color: #ffffff; 
+	background-color: #0065fc;                   /*bleu*/
+	
+	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
+}
+
+
+
 .filtre i {     /*icone*/
 	color: #0065FC;
 	background: #DEEBFF;
@@ -230,8 +241,6 @@ button:active {                            /*quand on clic*/
 	
 	border-radius: 50%;      
 }
-
-
 
 .info_icon i {          /*icone info*/
     color: #0065fc;
@@ -250,7 +259,7 @@ button:active {                            /*quand on clic*/
     margin-bottom: 50px;     /*espace info et bloc section 2*/
  }
  
- 
+
  
 /*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
 
@@ -271,7 +280,7 @@ button:active {                            /*quand on clic*/
 
     .icon_gps {    /*mise à l'échelle icon*/
         font-size: 2.7em;
-        padding: 30px 40px 30px 40px;     /*taille gris claire*/
+        padding: 30px 40px 29px 40px;     /*taille gris claire*/
 
         border-top-left-radius: 40px 40px;     /*bordure en cercle*/
 	    border-bottom-left-radius: 40px 40px;
