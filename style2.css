@@ -2,7 +2,7 @@
 
 #hebergements {   /*tout le bloc (hebergement Marseille + Populaires)*/
      display: flex;
-     justify-content: flex-start;  /*priorise l'alignement gauche, mais jolie aussi en space-arround. Voir avec client*/
+     justify-content: space-between;  
 
 }   
 
@@ -11,14 +11,15 @@
 
 .hebergements_marseille {  /*bloc de gauche*/
     display: flex;
-    justify-content: flex-start;   /*Possible de mettre en flex start, ca dépend où tu veux le blanc (droite ou entre les images) - le top c'est around mais 
+    justify-content: space-between;   /*Possible de mettre en flex start, ca dépend où tu veux le blanc (droite ou entre les images) - le top c'est around mais 
                                         tu perds alignement avec "hebergement" ---> voir avec client*/
     flex-wrap: wrap;
 
     background: #F2F2F2;
     padding: 15px 0px 15px 50px;   /*marge des contours du bloc*/
     margin-top : 30px;       /*espace entre info et bloc*/
-
+    
+    width: 60%;
     border-radius: 15px / 15px;
 }
 
@@ -56,18 +57,19 @@
     font-weight: bold;
 }
 
-.hebergements_marseille_bloc p {   
-    line-height: 10px;   /*gère l'espace entre ligne "nom de l'auberge" et "prix de la nuit" */
-	padding-left: 10px;  /*texte et étoiles*/
-	margin-bottom: 5px;  /*espace sous les étoiles ! */
-}
-
 .ligne_titre {             /*ajustement des polices*/
     font-size: 1.1em;
 }
 
 .ligne_prix{
     font-size: 0.9em;
+}
+
+.hebergements_marseille_bloc p {
+    line-height: 10px;
+	padding-left: 10px;  /*texte et étoiles*/
+
+	margin-bottom: 7px;  /*espace sous les étoiles ! */
 }
 
 .notation_etoile {    /*reglage des étoiles*/
@@ -79,5 +81,59 @@
 /*-----------------------------------Bloc droite - Hebergements pop------------------------*/
 
 #hebergements_pop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /*placement de l'icone en haut*/
+    margin-top: 30px; /*pck elle est aussi sur bloc hebergement - si tu mets pas t'es plus aligné*/
+
+    width: 25%;
+
+    background: #F2F2F2;
+    border-radius: 15px / 15px;
+    padding: 15px 50px 15px 50px;                      /*coutour inte, si tu modifies, touche aussi le bloc hebergement*/
+}
+
+#hebergements_pop i {          /*espace pour icon en face de "les plus pop" mais ca sert aussi à mettre les étoiles en bas*/
+	margin-top: 18px;       /*size géré dans le code html pour pas géner les étoiles*/	
+}
+
+.hebergements_pop_bloc img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    margin-right: 30px;     /*espace avec texte*/
+    float: left;
+
+    border-bottom-left-radius: 15px 15px;
+    border-top-left-radius: 15px 15px;
+ }
+
+ .hebergements_pop_bloc{
+    padding: 5px;                            /*marge fine autour du bloc*/
+    margin: 0;                          /*aligne bloc avec titre "les plus pop"*/
+    width: 100%;
+
+    max-height: 150px;        /*même que image*/
+
+    background: white;
+    border-radius: 15px / 15px;
+
+    position: relative; /*pour étoiles*/
+}
+
+.etoiles_pop{
+   font-size: 13px;    /*taille étoiles*/
+
+   position: absolute;   /*position étoiles*/
+   bottom: 5px;
+   left: 185px;  
     
 }
+
+.hebergements_pop_bloc p {
+    margin-top: 7px;  /*marge texte et bloc*/
+    margin-bottom: 10px;  /*ajustement espace entre les lignes de texte*/
+    padding-right: 10px;   /*marge doite du texte - permet le retour à la ligne*/
+}
+
