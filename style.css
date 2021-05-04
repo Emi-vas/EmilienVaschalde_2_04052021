@@ -195,26 +195,34 @@ button:active {                            /*quand on clic*/
 	box-shadow: none;
 }
 
-.boutton_tel{
+.boutton_tel {
     display: none;
 }
 
 
-.filtre {
+
+.bloc_filtre { 
+    display: flex;
+    align-items: baseline;   /*aligne "filtre" avec les filtre "economique ect..." */
+
+    font-weight: bold;     
+    font-size: 1em;
+
+    margin-top: 15px;       /*espace bloc recherche et filtre*/
+}
+
+.filtre {    /*les filtres sans le mot "filtre" : c'est la liste*/
 	display: flex;
-    align-items: baseline;  /*aligne "filtre" avec les filtre "economique ect..." */
-    
+      
 	list-style-type: none;    /*enlève les capsules*/
     flex-wrap: wrap;            /*retour à la ligne responsive*/
-    font-weight: bold;     
-
-	font-size: 1em;
 }
 
 .section_top li {
-   padding:0 20px 0 0; 
-   margin-left: 25px;     /*espace entre les filtre*/
-   margin-top: 15px;       /*espace bloc recherche et filtre*/
+   padding:0 20px 0 0;     /*met de l'aire sur la droite des filtres*/
+   margin-right: 25px;     /*espace entre les filtre*/
+   margin-bottom: 7px;    /*espace quand ils wrap*/
+   
     
    border: #e4e4e4 2px solid;    /*gris*/
    border-radius: 25px / 25px;   /*bordure demi cercle*/
@@ -242,28 +250,41 @@ button:active {                            /*quand on clic*/
 	border-radius: 50%;      
 }
 
-.info_icon i {          /*icone info*/
+
+
+.info {
+    display: flex;    /*permet de mieux gérer le retour ligne version port*/
+    
+}
+
+.info p {
+    margin-top: 7px;   /*aligne texte et icon*/
+    
+}
+
+.info_icon {          /*icone info*/
     color: #0065fc;
     font-size: 0.9em;
 
-    padding: 5px 10px 5px 10px;   /*construction bordure en cercle*/
+    padding: 5px 13px 5px 13px;   /*construction bordure en cercle*/
     border: #e4e4e4 solid 1px;
     border-radius: 50%;
     
-    margin-right: 5px;
+    margin-right: 15px;   /*espace entre icon et texte*/
+    height: 20px;         /*bloc la hauteur pour le flex*/
 }
 
-.section_top p { /*bloc info*/
 
-    margin-top: 30px;        /*espace filtre et info*/
-    margin-bottom: 50px;     /*espace info et bloc section 2*/
- }
  
 
  
 /*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
 
 @media screen and (max-device-width:480px){
+    
+    .section_top {      /*le bloc entier top*/
+        width: 90%;
+    }
 
     .bloc_recherche {
         margin-left: 50px; /*même que h1 et p du header*/  
@@ -306,6 +327,61 @@ button:active {                            /*quand on clic*/
         left: -33px;   /*decalage boutton*/
     }
 
-  
 
+    
+    .bloc_filtre {
+        flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
+        margin-left: 50px;   /*idem que plus haut*/
+        margin-top: 70px;    /*espace entre bloc recherche et "filtres"*/
+
+        font-size: 1.9em;
+    }
+
+    .bloc_filtre p {      /*mot filtre*/
+       width: 100%;
+       font-size: 1.2em;
+    }
+
+    .bloc_filtre ul {
+        padding-left: 0; /*aligne les filtre sur la gauche*/
+    }
+
+    .bloc_filtre li {
+        position: relative;
+        top: -40px;             /*pour remonter les filtre par rapport au mot "filtre"*/
+
+        border-radius: 60px / 60px;
+        border: #e4e4e4 solid 4px;
+        padding:0 40px 0 0;     /*met de l'aire sur la droite des filtres*/
+        
+        margin-bottom: 20px;  /*pour le wrap*/
+        margin-right: 35px;     /*espace entre les filtre*/
+    }
+
+    .bloc_filtre i {
+        padding: 25px 25px 25px 25px;     /*taille bleu claire*/
+        margin-right: 20px;                /*espace entre texte et ico*/
+        
+        position: relative;   /*decale légerement l'icone*/
+        left: -5px;
+        
+
+        vertical-align: -5px;   /*centre le texte hauteur*/
+    }
+
+    .bloc_filtre ul {                 /*pour réduire espace entre les filtres et info*/
+        margin-bottom: 0;
+    }
+
+
+
+    .info {   /*tout le bloc info*/
+        font-size: 1.9em;
+        margin-left: 50px;    /*same*/
+    }
+
+    .info_icon {   /*ajustement bordure icone*/
+        border: 3px solid #e4e4e4;
+        padding : 9px 20px 20px 20px;
+    }
 }
