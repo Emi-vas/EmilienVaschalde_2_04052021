@@ -1,0 +1,83 @@
+/*---------------------------------------------------------------------SECTION - HEBERGEMENT---------------------------------------------------------*/
+
+#hebergements {   /*tout le bloc (hebergement Marseille + Populaires)*/
+     display: flex;
+     justify-content: flex-start;  /*priorise l'alignement gauche, mais jolie aussi en space-arround. Voir avec client*/
+
+}   
+
+/*--------------------bloc de gauche - hebergement Marseille-------------------------*/
+
+
+.hebergements_marseille {  /*bloc de gauche*/
+    display: flex;
+    justify-content: flex-start;   /*Possible de mettre en flex start, ca dépend où tu veux le blanc (droite ou entre les images) - le top c'est around mais 
+                                        tu perds alignement avec "hebergement" ---> voir avec client*/
+    flex-wrap: wrap;
+
+    background: #F2F2F2;
+    padding: 15px 0px 15px 50px;   /*marge des contours du bloc*/
+    margin-top : 30px;       /*espace entre info et bloc*/
+
+    border-radius: 15px / 15px;
+}
+
+.hebergements_marseille_bloc {   /*Bloc enfant*/
+    background: white;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;  /*même que le padding de .hebergements_marseille*/
+   
+    padding: 7px;       /*espace entre image et bloc*/
+    	
+    border-radius: 15px / 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;   
+}
+
+.hebergements_marseille_img {
+    width: 250px;                  /*defini une taille pour l'object fit*/
+    height: 130px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: left;         /*cadre sur la partie gauche*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.top {  /*le texte "hebergement Marseille*/
+    width: 100%;
+    font-size: 1.4em;
+}
+
+.bottom {    /*Le texte "afficher plus"*/
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.hebergements_marseille_bloc p {   
+    line-height: 10px;   /*gère l'espace entre ligne "nom de l'auberge" et "prix de la nuit" */
+	padding-left: 10px;  /*texte et étoiles*/
+	margin-bottom: 5px;  /*espace sous les étoiles ! */
+}
+
+.ligne_titre {             /*ajustement des polices*/
+    font-size: 1.1em;
+}
+
+.ligne_prix{
+    font-size: 0.9em;
+}
+
+.notation_etoile {    /*reglage des étoiles*/
+
+    font-size: 13px;
+}
+
+
+/*-----------------------------------Bloc droite - Hebergements pop------------------------*/
+
+#hebergements_pop {
+    
+}

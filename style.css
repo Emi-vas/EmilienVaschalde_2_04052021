@@ -209,6 +209,7 @@ button:active {                            /*quand on clic*/
     font-size: 1em;
 
     margin-top: 15px;       /*espace bloc recherche et filtre*/
+    margin-bottom: 10px;    /*espace entre les filtres et info*/
 }
 
 .bloc_filtre h2 {
@@ -389,3 +390,4 @@ button:active {                            /*quand on clic*/
         padding : 9px 20px 20px 20px;
     }
 }
+
