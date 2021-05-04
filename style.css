@@ -194,7 +194,9 @@ button:active {                            /*quand on clic*/
 	box-shadow: none;
 }
 
-
+.boutton_tel{
+    display: none;
+}
 
 
 .filtre {
@@ -250,5 +252,51 @@ button:active {                            /*quand on clic*/
  
  
  
+/*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
 
+@media screen and (max-device-width:480px){
 
+    .bloc_recherche {
+        margin-left: 50px; /*même que h1 et p du header*/  
+         
+    }
+
+    .boutton_tel {         /*active icone version tel*/
+        display: inline;
+    }
+
+    .boutton_pc {       /*enlève texte version pc*/
+        display: none;
+    }
+
+    .icon_gps {    /*mise à l'échelle icon*/
+        font-size: 2.7em;
+        padding: 30px 40px 30px 40px;     /*taille gris claire*/
+
+        border-top-left-radius: 40px 40px;     /*bordure en cercle*/
+	    border-bottom-left-radius: 40px 40px;
+    }
+
+    .saisie {     /*mise à l'echelle eone saisie*/
+        height: 110px;    /*même que boutton*/
+        width: 70%;
+
+        font-size: 2.7em;
+        border: 4px solid #F2F2F2;
+
+        padding-right: 33px;    /*marge due au décalage*/
+    }
+
+    button {          
+        border-radius: 40px / 40px;  /*création bordure gauche*/
+        
+        font-size: 2.3em;
+        height: 110px;      /*même que saisie*/
+        padding: 0 40px 0 40px;
+
+        left: -33px;   /*decalage boutton*/
+    }
+
+  
+
+}
