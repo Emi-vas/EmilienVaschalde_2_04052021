@@ -129,3 +129,126 @@ header a{
         margin-left: 50px;     /*même que h1 su tu veux aligner*/
     }
 }
+
+
+/*----------------------------Section top ------------------------------*/
+/*                       bloc recherche + filtre                    */
+
+.bloc_recherche {    /*tout le bloc : icone gps + saisie + bouton*/
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	
+}
+
+
+.icon_gps {                         /*logo gps*/
+	padding: 15px 20px 14px 22px;  /*le gris*/
+
+	font-size: 1.1em;
+	
+	
+	border-top-left-radius: 15px 15px;     /*bordure en cercle*/
+	border-bottom-left-radius: 15px 15px;
+	
+	background: #F2F2F2;
+}
+
+.saisie {
+   
+   font-size: 1.3em;     /*taille de la police saisie par utilisateur*/
+   height: 50px;
+   padding-left: 10px;
+   padding-right: 15px;    /*très important !!! vu que tu as décalé le bouton*/
+  
+   border: #F2F2F2 solid 1px;  /*gris clair*/
+}
+
+button {
+	color: white;      
+	background: #0065fc ;    /*bleu bouton*/
+	height:  50px;           /*même que champ saisie*/
+	font-size: 1em;
+
+	position: relative;     /*evite bordure zone saisie*/
+    left: -15px;
+
+	font-weight: bold;
+	border:none;
+	border-top-right-radius: 15px 15px;     /*bordure en cercle*/
+	border-bottom-right-radius: 15px 15px;
+
+    padding-right: 20px;    /*met de l'aire autour du texte*/
+    padding-left: 20px;
+	margin-left: 0;       /*enlève l'espace entre bouton et zone de saisie*/
+}
+
+
+button:hover {
+	background-color: #1a75fe;
+	box-shadow: 0 3px 5px grey;
+}
+
+button:active {                            /*quand on clic*/
+	background-color: #0065fc;
+	box-shadow: none;
+}
+
+
+
+
+.filtre {
+	display: flex;
+    align-items: baseline;  /*aligne "filtre" avec les filtre "economique ect..." */
+    
+	list-style-type: none;    /*enlève les capsules*/
+    flex-wrap: wrap;            /*retour à la ligne responsive*/
+    font-weight: bold;     
+
+	font-size: 1em;
+}
+
+.section_top li {
+   padding:0 20px 0 0; 
+   margin-left: 25px;     /*espace entre les filtre*/
+   margin-top: 15px;       /*espace bloc recherche et filtre*/
+    
+   border: #e4e4e4 2px solid;    /*gris*/
+   border-radius: 25px / 25px;   /*bordure demi cercle*/
+}
+
+.filtre i {     /*icone*/
+	color: #0065FC;
+	background: #DEEBFF;
+	padding: 13px 11px 13px 11px;    /*taille du bleu claire*/
+	
+	vertical-align: -2px;        /*position du texte*/
+	margin-right: 10px;                /*espace entre texte et ico*/
+	font-size: 1.3em;                /*taille du bleu foncé*/
+	
+	border-radius: 50%;      
+}
+
+
+
+.info_icon i {          /*icone info*/
+    color: #0065fc;
+    font-size: 0.9em;
+
+    padding: 5px 10px 5px 10px;   /*construction bordure en cercle*/
+    border: #e4e4e4 solid 1px;
+    border-radius: 50%;
+    
+    margin-right: 5px;
+}
+
+.section_top p { /*bloc info*/
+
+    margin-top: 30px;        /*espace filtre et info*/
+    margin-bottom: 50px;     /*espace info et bloc section 2*/
+ }
+ 
+ 
+ 
+
+
