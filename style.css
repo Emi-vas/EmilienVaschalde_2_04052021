@@ -211,6 +211,10 @@ button:active {                            /*quand on clic*/
     margin-top: 15px;       /*espace bloc recherche et filtre*/
 }
 
+.bloc_filtre h2 {
+    font-size: 1.1em;
+}
+
 .filtre {    /*les filtres sans le mot "filtre" : c'est la liste*/
 	display: flex;
       
@@ -332,7 +336,7 @@ button:active {                            /*quand on clic*/
     .bloc_filtre {
         flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
         margin-left: 50px;   /*idem que plus haut*/
-        margin-top: 70px;    /*espace entre bloc recherche et "filtres"*/
+        margin-top: 50px;    /*espace entre bloc recherche et "filtres"*/
 
         font-size: 1.9em;
     }
@@ -348,7 +352,7 @@ button:active {                            /*quand on clic*/
 
     .bloc_filtre li {
         position: relative;
-        top: -40px;             /*pour remonter les filtre par rapport au mot "filtre"*/
+        top: -25px;             /*pour remonter les filtre par rapport au mot "filtre"*/
 
         border-radius: 60px / 60px;
         border: #e4e4e4 solid 4px;
