@@ -19,7 +19,7 @@
     padding: 15px 0px 15px 50px;   /*marge des contours du bloc*/
     margin-top : 30px;       /*espace entre info et bloc*/
     
-    width: 60%;
+    width: 65%;
     border-radius: 15px / 15px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .hebergements_marseille_img {
-    width: 250px;                  /*defini une taille pour l'object fit*/
+    width: 280px;                  /*defini une taille pour l'object fit*/
     height: 130px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: left;         /*cadre sur la partie gauche*/
@@ -86,7 +86,7 @@
     justify-content: space-between;  /*placement de l'icone en haut*/
     margin-top: 30px; /*pck elle est aussi sur bloc hebergement - si tu mets pas t'es plus aligné*/
 
-    width: 25%;
+    width: 23%;
 
     background: #F2F2F2;
     border-radius: 15px / 15px;
@@ -132,8 +132,8 @@
 }
 
 .hebergements_pop_bloc p {
-    margin-top: 7px;  /*marge texte et bloc*/
-    margin-bottom: 10px;  /*ajustement espace entre les lignes de texte*/
-    padding-right: 10px;   /*marge doite du texte - permet le retour à la ligne*/
+    margin-top: 9px;  /*marge texte et bloc*/
+    margin-bottom: 13px;  /*ajustement espace entre les lignes de texte*/
+    padding-right: 30px;   /*marge doite du texte - permet le retour à la ligne*/
 }
 
