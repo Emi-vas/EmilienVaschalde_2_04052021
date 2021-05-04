@@ -17,7 +17,7 @@ header{
 	align-items: center;  /*aligne en hauteur logo et menu*/
 }
 
-.logo_reservia        {
+.logo_reservia{
 	width: 140px;
 	height: auto;
 }
@@ -26,6 +26,7 @@ header h1{
     width: 100%;            /*force retour à la ligne*/
     font-size: 1.8em;
     margin-bottom: 0;       /*reduit l'espace entre titre et sous titre*/
+    margin-top: 50px;        /*marge sous le logo*/
 }
 
 header p{
@@ -127,8 +128,4 @@ header a{
         color: black;
         margin-left: 50px;     /*même que h1 su tu veux aligner*/
     }
-
-
-
-
 }
