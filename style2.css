@@ -1,0 +1,152 @@
+/*---------------------------------------------------------------------SECTION - HEBERGEMENT---------------------------------------------------------*/
+
+#hebergements {   /*tout le bloc (hebergement Marseille + Populaires)*/
+     display: flex;
+     justify-content: space-between;  
+}   
+
+#hebergements a {
+    text-decoration: none;
+    color: black;
+}
+/*--------------------bloc de gauche - hebergement Marseille-------------------------*/
+
+
+.hebergements_marseille {  /*bloc de gauche*/
+    display: flex;
+    justify-content: space-between;   /*Possible de mettre en flex start, ca dépend où tu veux le blanc (droite ou entre les images) - le top c'est around mais 
+                                        tu perds alignement avec "hebergement" ---> voir avec client*/
+    flex-wrap: wrap;
+
+    background: #F2F2F2;
+    padding: 15px 50px 15px 50px;   /*marge des contours du bloc*/
+    margin-top : 30px;       /*espace entre info et bloc*/
+    margin-right: 10px;      /*espace min entre les blocs "hebergement marseille" et "les plus pop"*/
+    
+    width: 60%;
+    border-radius: 15px / 15px;
+}
+
+.hebergements_marseille_bloc {   /*Bloc enfant*/
+    background: white;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;   /*espace avant de wrap*/
+    
+    padding: 7px;       /*espace entre image et bloc*/
+    	
+    border-radius: 15px / 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;   
+}
+
+.hebergements_marseille_bloc:hover {
+    box-shadow: 0px 5px 10px #0065fc65;
+}
+
+.hebergements_marseille_img {
+    width: 280px;                  /*defini une taille pour l'object fit*/
+    height: 130px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: left;         /*cadre sur la partie gauche*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.top {  /*le texte "hebergement Marseille*/
+    width: 100%;
+    font-size: 1.4em;
+}
+
+.bottom {    /*Le texte "afficher plus"*/
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ligne_titre {             /*ajustement des polices*/
+    font-size: 1.1em;
+}
+
+.ligne_prix{
+    font-size: 0.9em;
+}
+
+.hebergements_marseille_bloc p {
+    line-height: 10px;
+	padding-left: 10px;  /*texte et étoiles*/
+
+	margin-bottom: 7px;  /*espace sous les étoiles ! */
+}
+
+.notation_etoile {    /*reglage des étoiles*/
+
+    font-size: 13px;
+}
+
+
+/*-----------------------------------Bloc droite - Hebergements pop------------------------*/
+
+#hebergements_pop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /*placement de l'icone en haut*/
+    margin-top: 30px; /*pck elle est aussi sur bloc hebergement - si tu mets pas t'es plus aligné*/
+
+    width: 25%;
+    min-width: 320px;     
+
+    background: #F2F2F2;
+    border-radius: 15px / 15px;
+    padding: 15px 50px 15px 50px;                      /*coutour inte, si tu modifies, touche aussi le bloc hebergement*/
+}
+
+#hebergements_pop i {          /*espace pour icon en face de "les plus pop" mais ca sert aussi à mettre les étoiles en bas*/
+	margin-top: 18px;       /*size géré dans le code html pour pas géner les étoiles*/	
+}
+
+.hebergements_pop_bloc img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    margin-right: 30px;     /*espace avec texte*/
+    float: left;
+
+    border-bottom-left-radius: 15px 15px;
+    border-top-left-radius: 15px 15px;
+ }
+
+ .hebergements_pop_bloc{
+    padding: 5px;                            /*marge fine autour du bloc*/
+    margin: 0;                          /*aligne bloc avec titre "les plus pop"*/
+    width: 100%;
+
+    max-height: 150px;        /*même que image*/
+
+    background: white;
+    border-radius: 15px / 15px;
+
+    position: relative; /*pour étoiles*/
+}
+
+.hebergements_pop_bloc:hover {
+    box-shadow: 0px 5px 10px #0065fc65;
+}
+
+.etoiles_pop{
+   font-size: 13px;    /*taille étoiles*/
+
+   position: absolute;   /*position étoiles*/
+   bottom: 5px;
+   left: 185px;  
+    
+}
+
+.hebergements_pop_bloc p {
+    margin-top: 9px;  /*marge texte et bloc*/
+    margin-bottom: 13px;  /*ajustement espace entre les lignes de texte*/
+    padding-right: 30px;   /*marge doite du texte - permet le retour à la ligne*/
+}
+

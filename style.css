@@ -1,0 +1,393 @@
+body{
+    width: 90%;
+	margin: auto;
+	padding: 30px;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*--------------------HEADER---------------------------*/
+header{
+	display: flex;
+	flex-wrap: wrap;  /*retour à la ligne*/
+	justify-content: space-between;
+
+	align-items: center;  /*aligne en hauteur logo et menu*/
+}
+
+.logo_reservia{
+	width: 140px;
+	height: auto;
+}
+
+header h1{
+    width: 100%;            /*force retour à la ligne*/
+    font-size: 1.8em;
+    margin-bottom: 0;       /*reduit l'espace entre titre et sous titre*/
+    margin-top: 50px;        /*marge sous le logo*/
+}
+
+header p{
+    font-size: 1.2em;
+    color: #505050;
+}
+
+header nav{
+    display: flex;
+}
+
+header a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #505050;
+}
+
+.menu1{             
+	padding-right: 30px;           /*marge entre les menu*/
+    
+}
+
+.menu1 a:hover {                         /*bordure bleu*/
+    border-top: 2px solid #0065fc;
+	color: #0065fc;
+}
+ 
+.menu1 a{                            /*met la bordure bleu en haut*/
+    padding-top: 47px;
+}
+
+.menu2{
+	margin-right: 50px;          /*evite de coller le menu*/
+}
+
+.menu2 a{
+    font-weight: bold;
+    color: #0065fc;
+}
+
+
+/*-------------------------RESPONSIVE----- HEADER-------------------------*/
+
+@media screen and (max-device-width:480px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
+     
+    body{                          /*Plein écran*/
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .logo_reservia{
+        
+        width: 230px;
+        margin-left: 50px;
+    }
+
+    nav{
+        width: 100%;
+        font-size: 1.7em;
+    
+    }
+
+    .menu1{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px; /*marge pour la bordure bleu*/
+        padding-top: 60px;     /*marge entre logo et menu*/
+
+        border-bottom: 6px solid #F2F2F2;
+        
+    }
+
+    .menu1 a:hover{
+        border: none;
+    }
+
+    .menu1:hover{
+        border-bottom: 6px #0065fc solid;
+    }
+
+
+    .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
+        position: absolute;
+        top: 80px;
+    	right:40px;
+    }
+
+    header h1{
+        font-size: 2.7em;
+        margin-top: 60px;     /*espace sous la bordure bleu*/
+        margin-left: 50px;    /*même que logo si tu veux les aligner*/
+    }
+
+    header p{
+        font-size: 2em;
+        color: black;
+        margin-left: 50px;     /*même que h1 su tu veux aligner*/
+    }
+}
+
+
+/*----------------------------Section top ------------------------------*/
+/*                       bloc recherche + filtre                    */
+
+.bloc_recherche {    /*tout le bloc : icone gps + saisie + bouton*/
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	
+}
+
+
+.icon_gps {                         /*logo gps*/
+	padding: 15px 20px 14px 22px;  /*le gris*/
+
+	font-size: 1.1em;
+	
+	
+	border-top-left-radius: 15px 15px;     /*bordure en cercle*/
+	border-bottom-left-radius: 15px 15px;
+	
+	background: #F2F2F2;
+}
+
+.saisie {
+   
+   font-size: 1.3em;     /*taille de la police saisie par utilisateur*/
+   font-weight: bold;
+   height: 50px;
+   padding-left: 10px;
+   padding-right: 15px;    /*très important !!! vu que tu as décalé le bouton*/
+  
+   border: #F2F2F2 solid 1px;  /*gris clair*/
+}
+
+button {
+	color: white;      
+	background: #0065fc ;    /*bleu bouton*/
+	height:  50px;           /*même que champ saisie*/
+	font-size: 1em;
+
+	position: relative;     /*evite bordure zone saisie*/
+    left: -15px;
+
+	font-weight: bold;
+	border:none;
+	border-top-right-radius: 15px 15px;     /*bordure en cercle*/
+	border-bottom-right-radius: 15px 15px;
+
+    padding-right: 20px;    /*met de l'aire autour du texte*/
+    padding-left: 20px;
+	margin-left: 0;       /*enlève l'espace entre bouton et zone de saisie*/
+}
+
+
+button:hover {
+	background-color: #1a75fe;
+	box-shadow: 0 3px 5px grey;
+}
+
+button:active {                            /*quand on clic*/
+	background-color: #0065fc;
+	box-shadow: none;
+}
+
+.boutton_tel {
+    display: none;
+}
+
+
+
+.bloc_filtre { 
+    display: flex;
+    align-items: baseline;   /*aligne "filtre" avec les filtre "economique ect..." */
+
+    font-weight: bold;     
+    font-size: 1em;
+
+    margin-top: 15px;       /*espace bloc recherche et filtre*/
+    margin-bottom: 10px;    /*espace entre les filtres et info*/
+}
+
+.bloc_filtre h2 {
+    font-size: 1.1em;
+}
+
+.filtre {    /*les filtres sans le mot "filtre" : c'est la liste*/
+	display: flex;
+      
+	list-style-type: none;    /*enlève les capsules*/
+    flex-wrap: wrap;            /*retour à la ligne responsive*/
+}
+
+.section_top li {
+   padding:0 20px 0 0;     /*met de l'aire sur la droite des filtres*/
+   margin-right: 25px;     /*espace entre les filtre*/
+   margin-bottom: 7px;    /*espace quand ils wrap*/
+   
+    
+   border: #e4e4e4 2px solid;    /*gris*/
+   border-radius: 25px / 25px;   /*bordure demi cercle*/
+}
+
+.filtre li:hover {     /*changement de couleur au survol des filtres*/
+	border: #0065fc solid 2px;
+	color: #ffffff; 
+	background-color: #0065fc;                   /*bleu*/
+	
+	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
+}
+
+
+
+.filtre i {     /*icone*/
+	color: #0065FC;
+	background: #DEEBFF;
+	padding: 13px 11px 13px 11px;    /*taille du bleu claire*/
+	
+	vertical-align: -2px;        /*position du texte*/
+	margin-right: 10px;                /*espace entre texte et ico*/
+	font-size: 1.3em;                /*taille du bleu foncé*/
+	
+	border-radius: 50%;      
+}
+
+
+
+.info {
+    display: flex;    /*permet de mieux gérer le retour ligne version port*/
+    
+}
+
+.info p {
+    margin-top: 7px;   /*aligne texte et icon*/
+    
+}
+
+.info_icon {          /*icone info*/
+    color: #0065fc;
+    font-size: 0.9em;
+
+    padding: 5px 13px 5px 13px;   /*construction bordure en cercle*/
+    border: #e4e4e4 solid 1px;
+    border-radius: 50%;
+    
+    margin-right: 15px;   /*espace entre icon et texte*/
+    height: 20px;         /*bloc la hauteur pour le flex*/
+}
+
+
+ 
+
+ 
+/*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
+
+@media screen and (max-device-width:480px){
+    
+    .section_top {      /*le bloc entier top*/
+        width: 90%;
+    }
+
+    .bloc_recherche {
+        margin-left: 50px; /*même que h1 et p du header*/  
+         
+    }
+
+    .boutton_tel {         /*active icone version tel*/
+        display: inline;
+    }
+
+    .boutton_pc {       /*enlève texte version pc*/
+        display: none;
+    }
+
+    .icon_gps {    /*mise à l'échelle icon*/
+        font-size: 2.7em;
+        padding: 30px 40px 29px 40px;     /*taille gris claire*/
+
+        border-top-left-radius: 40px 40px;     /*bordure en cercle*/
+	    border-bottom-left-radius: 40px 40px;
+    }
+
+    .saisie {     /*mise à l'echelle eone saisie*/
+        height: 110px;    /*même que boutton*/
+        width: 70%;
+
+        font-size: 2.7em;
+        border: 4px solid #F2F2F2;
+
+        padding-right: 33px;    /*marge due au décalage*/
+    }
+
+    button {          
+        border-radius: 40px / 40px;  /*création bordure gauche*/
+        
+        font-size: 2.3em;
+        height: 110px;      /*même que saisie*/
+        padding: 0 40px 0 40px;
+
+        left: -33px;   /*decalage boutton*/
+    }
+
+
+    
+    .bloc_filtre {
+        flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
+        margin-left: 50px;   /*idem que plus haut*/
+        margin-top: 50px;    /*espace entre bloc recherche et "filtres"*/
+
+        font-size: 1.9em;
+    }
+
+    .bloc_filtre p {      /*mot filtre*/
+       width: 100%;
+       font-size: 1.2em;
+    }
+
+    .bloc_filtre ul {
+        padding-left: 0; /*aligne les filtre sur la gauche*/
+    }
+
+    .bloc_filtre li {
+        position: relative;
+        top: -25px;             /*pour remonter les filtre par rapport au mot "filtre"*/
+
+        border-radius: 60px / 60px;
+        border: #e4e4e4 solid 4px;
+        padding:0 40px 0 0;     /*met de l'aire sur la droite des filtres*/
+        
+        margin-bottom: 20px;  /*pour le wrap*/
+        margin-right: 35px;     /*espace entre les filtre*/
+    }
+
+    .bloc_filtre i {
+        padding: 25px 25px 25px 25px;     /*taille bleu claire*/
+        margin-right: 20px;                /*espace entre texte et ico*/
+        
+        position: relative;   /*decale légerement l'icone*/
+        left: -5px;
+        
+
+        vertical-align: -5px;   /*centre le texte hauteur*/
+    }
+
+    .bloc_filtre ul {                 /*pour réduire espace entre les filtres et info*/
+        margin-bottom: 0;
+    }
+
+
+
+    .info {   /*tout le bloc info*/
+        font-size: 1.9em;
+        margin-left: 50px;    /*same*/
+    }
+
+    .info_icon {   /*ajustement bordure icone*/
+        border: 3px solid #e4e4e4;
+        padding : 9px 20px 20px 20px;
+    }
+}
+
