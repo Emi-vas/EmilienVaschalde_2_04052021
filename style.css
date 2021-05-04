@@ -1,0 +1,67 @@
+body{
+    width: 90%;
+	margin: auto;
+	padding: 30px;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*--------------------HEADER---------------------------*/
+header{
+	display: flex;
+	flex-wrap: wrap;  /*retour à la ligne*/
+	justify-content: space-between;
+
+	align-items: center;  /*aligne en hauteur logo et menu*/
+}
+
+.logo_reservia        {
+	width: 140px;
+	height: auto;
+}
+
+header h1{
+    width: 100%;            /*force retour à la ligne*/
+    font-size: 1.8em;
+    margin-bottom: 0;       /*reduit l'espace entre titre et sous titre*/
+}
+
+header p{
+    font-size: 1.2em;
+    color: #505050;
+}
+
+header nav{
+    display: flex;
+}
+
+header a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #505050;
+}
+
+.menu1{             
+	padding-right: 30px;           /*marge entre les menu*/
+    
+}
+
+.menu1 a:hover {                         /*bordure bleu*/
+    border-top: 2px solid #0065fc;
+	color: #0065fc;
+}
+ 
+.menu1 a{                            /*met la bordure bleu en haut*/
+    padding-top: 47px;
+}
+
+.menu2{
+	margin-right: 50px;          /*evite de coller le menu*/
+}
+
+.menu2 a{
+    font-weight: bold;
+    color: #0065fc;
+}
