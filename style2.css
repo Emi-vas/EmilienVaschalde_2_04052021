@@ -130,13 +130,14 @@
     border-radius: 15px / 15px;
 
     position: relative; /*pour étoiles*/
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
 }
 
 .hebergements_pop_bloc:hover {
     box-shadow: 0px 5px 10px #0065fc65;
 }
 
-.etoiles_pop{
+.etoiles_pop {
    font-size: 13px;    /*taille étoiles*/
 
    position: absolute;   /*position étoiles*/
@@ -163,11 +164,11 @@
     }
 
     .hebergements_marseille {
-        width: 93%;
+        width: auto;
     }
 
     .hebergements_pop {
-        width: 93%;
+        width: auto;
     }
     
     .hebergements_pop_bloc {   
@@ -180,6 +181,60 @@
 
 
 @media screen and (max-device-width:480px) {     /*sur un tel*/
+    
+     /*------- bloc - populaires-------*/
 
+    .icone_titre {
+        font-size: 1.5em;
+        padding-top: 35px;     /*pour aligner avec le titre*/
+    }
+    
+    .titre_pop {
+        font-size: 2.7em;
+        margin-bottom: 50px;           /*marge du titre*/
+        margin-top: 50px;
+    }
+
+    .hebergements_pop {
+        padding-left: 90px;    /*marge sur les cotés*/
+        padding-right: 90px;
+    }
+
+    .hebergements_pop_bloc {
+        width: 100%;
+        max-height: 290px;  /*même que image*/
+        padding: 10px;      /*contour*/
+        margin-bottom: 30px; /*espace entre les blocs*/
+
+        border-radius: 40px / 40px;
+    }
+
+    .etoiles_pop {
+        font-size: 1.5em;
+        bottom: 10px;       /*utilise bien left et bottom comme dans la version pc, sinon conflit*/
+        left: 330px; 
+    }
+
+    .hebergements_pop_bloc img {
+        width: 290px;
+        height: 290px;
+
+        margin-right: 50px; /*marge avec texte*/
+
+        border-bottom-left-radius: 40px 40px;
+        border-top-left-radius: 40px 40px;
+    }
+
+    .ligne_titre {
+        font-size: 2.3em;
+    }
+
+    .ligne_prix {
+        font-size: 1.8em;
+    }
+
+    .hebergements_pop_bloc p {
+        padding-right: 40px;   /*marge doite du texte - permet le retour à la ligne*/
+    }
 
 }
