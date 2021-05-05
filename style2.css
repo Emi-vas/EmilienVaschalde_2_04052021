@@ -29,6 +29,7 @@
 
 .hebergements_marseille_bloc {   /*Bloc enfant*/
     background: white;
+    max-width: 300px;  /*lié à image*/
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -258,6 +259,7 @@
 
     .hebergements_marseille_bloc {
         width: 100%;
+        max-width: none;
         border-radius: 40px / 40px;
 
         padding: 10px; 
@@ -266,6 +268,11 @@
     .top {     /*titre*/
         font-size: 2.1em;
     }
+
+    .bottom{     /*afficher plus*/
+        margin-top: 30px;
+    }
+
 
     .hebergements_marseille_img {
         width: 100%;
@@ -276,8 +283,8 @@
     }
 
     .hebergements_marseille_bloc p {
-        line-height: 15px;   /*espace entre les ligne (étoiles comprisent)*/
-        padding-left: 30px; /*décalage du texte et étoiles*/
+        line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/
+        padding-left: 30px;     /*espace entre texte et bord du bloc*/
     }
 
     .ligne_titre {
@@ -289,6 +296,9 @@
     }
 
     .notation_etoile {    /*reglage des étoiles*/
-      font-size: 10px;
+      font-size: 12px;
     }
+
+    
+
 }
