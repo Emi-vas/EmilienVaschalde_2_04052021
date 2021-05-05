@@ -391,3 +391,7 @@ button:active {                            /*quand on clic*/
     }
 }
 
+
+footer {
+    height: 3000px;
+}
