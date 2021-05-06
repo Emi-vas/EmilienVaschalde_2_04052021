@@ -2,7 +2,7 @@
 .corps_site{
     width: 90%;
 	margin: auto;
-	padding: 30px;
+	padding: 40px 30px;
 
 	font-family: 'Raleway', sans-serif;
 }
@@ -47,10 +47,10 @@ header a{
 
 .menu1{             
 	padding: 0 20px;           /*marge entre les menu*/
-    padding-top: 30px;         /*marge bleu*/
+    padding-top: 40px;         /*marge bleu*/
     
     position: relative;
-    top: -30px;      /*même que la marge (padding top)*/
+    top: -40px;      /*même que la marge (padding top)*/
     
 }
 
