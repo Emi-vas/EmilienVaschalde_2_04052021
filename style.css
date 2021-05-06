@@ -1,3 +1,6 @@
+body {
+    width: 100%;
+}
 .corps_site{
     width: 90%;
 	margin: auto;
@@ -71,7 +74,7 @@ header a{
 
 @media screen and (max-device-width:480px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
      
-    body{                          /*Plein écran*/
+    .corps_site{                          /*Plein écran*/
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -396,17 +399,20 @@ button:active {                            /*quand on clic*/
 /*-----------------------------------------------------FOOTER-------------------------------------------------*/
 
 footer {
+    
     font-family: 'Raleway', sans-serif;
     background: #F2F2F2;
     width: 100%;
 
-    padding: 30px 100px;
+    padding: 50px 100px;
+
+    display: flex;
 }
 
 footer a {
     color: black;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 footer a:hover {
@@ -417,14 +423,28 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 
-    width: 25%;
+    width: 30%;
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/
     font-weight: bold;
-    padding: 20px 0;
+    padding: 27px 0;
 }
 
 .footer_bloc a {
-    padding: 7px 0;
+    padding: 8px 0;
+}
+
+
+/*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
+
+@media screen and (max-device-width:480px) {
+    footer {
+        flex-direction: column;
+        padding-bottom: 0;  /*pck il y a le margin-bottom*/
+    }
+
+    .footer_bloc {
+        margin-bottom: 50px;
+    }
 }
