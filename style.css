@@ -1,6 +1,4 @@
-body {
-    width: 100%;
-}
+
 .corps_site{
     width: 90%;
 	margin: auto;
@@ -441,10 +439,15 @@ footer a:hover {
 @media screen and (max-device-width:480px) {
     footer {
         flex-direction: column;
-        padding-bottom: 0;  /*pck il y a le margin-bottom*/
+        
+        margin: 0;
+        padding: 50px 0;
     }
 
     .footer_bloc {
-        margin-bottom: 50px;
+        font-size: 1.7em;
+        margin: 25px 0;
+        padding-left: 80px;
+        width: auto;
     }
 }
