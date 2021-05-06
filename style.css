@@ -1,3 +1,8 @@
+html, body {        /*POUR ENLEVEVER LE PIXEL DE MARGE VERSION TEL !*/
+    margin:0;
+    padding:0;
+}
+
 
 .corps_site{
     width: 90%;
@@ -80,6 +85,7 @@ header a{
         padding-left: 0;
     }
 
+
     .logo_reservia{
         
         width: 230px;
@@ -115,7 +121,7 @@ header a{
 
     .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
         position: absolute;
-        top: 80px;
+        top: 90px;
     	right:40px;
     }
 
@@ -260,7 +266,7 @@ button:active {                            /*quand on clic*/
 
 
 .info {
-    display: flex;    /*permet de mieux gérer le retour ligne version port*/
+    display: flex;    /*permet de mieux gérer le retour ligne version port, ça fait 2 blocs*/
     
 }
 
@@ -439,15 +445,13 @@ footer a:hover {
 @media screen and (max-device-width:480px) {
     footer {
         flex-direction: column;
-        
-        margin: 0;
         padding: 50px 0;
     }
 
     .footer_bloc {
         font-size: 1.7em;
         margin: 25px 0;
-        padding-left: 80px;
+        padding-left: 100px;
         width: auto;
     }
 }
