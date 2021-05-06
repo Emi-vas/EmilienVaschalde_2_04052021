@@ -14,7 +14,7 @@ header{
 	flex-wrap: wrap;  /*retour à la ligne*/
 	justify-content: space-between;
 
-	align-items: center;  /*aligne en hauteur logo et menu*/
+	align-items: center  /*aligne en hauteur logo et menu*/
 }
 
 .logo_reservia{
@@ -45,27 +45,26 @@ header a{
 }
 
 .menu1{             
-	padding-right: 30px;           /*marge entre les menu*/
+	padding: 0 20px;           /*marge entre les menu*/
+    padding-top: 30px;         /*marge bleu*/
+    
+    position: relative;
+    top: -30px;      /*même que la marge (padding top)*/
     
 }
 
-.menu1 a:hover {                         /*bordure bleu*/
+.menu1:hover {                         /*bordure bleu*/
     border-top: 2px solid #0065fc;
 	color: #0065fc;
 }
  
-.menu1 a{                            /*met la bordure bleu en haut*/
-    padding-top: 47px;
-}
-
 .menu2{
-	margin-right: 50px;          /*evite de coller le menu*/
-}
-
-.menu2 a{
+	margin: 0 20px;          /*même que padding menu 1*/
     font-weight: bold;
     color: #0065fc;
 }
+
+
 
 
 /*-------------------------RESPONSIVE----- HEADER-------------------------*/
@@ -99,10 +98,12 @@ header a{
         padding-top: 60px;     /*marge entre logo et menu*/
 
         border-bottom: 6px solid #F2F2F2;
+
+        top: 0; /*tu annules le décalage que tu as fait pour la bordure*/
         
     }
 
-    .menu1 a:hover{
+    .menu1:hover{
         border: none;
     }
 
