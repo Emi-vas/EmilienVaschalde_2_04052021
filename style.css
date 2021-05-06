@@ -121,7 +121,7 @@ header a{
 
     .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
         position: absolute;
-        top: 90px;
+        top: 75px;
     	right:40px;
     }
 
@@ -365,21 +365,20 @@ button:active {                            /*quand on clic*/
 
         border-radius: 60px / 60px;
         border: #e4e4e4 solid 4px;
-        padding:0 40px 0 0;     /*met de l'aire sur la droite des filtres*/
+        padding:25px 40px 24px 110px;     /*bordure des filtres*/
         
         margin-bottom: 20px;  /*pour le wrap*/
         margin-right: 35px;     /*espace entre les filtre*/
     }
 
     .bloc_filtre i {
-        padding: 25px 25px 25px 25px;     /*taille bleu claire*/
+        padding: 27px 25px;     /*taille bleu claire*/
         margin-right: 20px;                /*espace entre texte et ico*/
         
-        position: relative;   /*decale légerement l'icone*/
-        left: -5px;
-        
-
-        vertical-align: -5px;   /*centre le texte hauteur*/
+        position: absolute;   /*decale légerement l'icone*/
+        top:-2px;
+        left: -1px;
+   
     }
 
     .bloc_filtre ul {                 /*pour réduire espace entre les filtres et info*/
