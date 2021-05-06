@@ -38,11 +38,14 @@
     padding: 7px;       /*espace entre image et bloc*/
     	
     border-radius: 15px / 15px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;   
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;
+    
+    -webkit-transition: all 0.3s;
 }
 
 .hebergements_marseille_bloc:hover {
     box-shadow: 0px 5px 10px #0065fc65;
+    transform:scale(1.1);
 }
 
 .hebergements_marseille_img {
@@ -131,10 +134,15 @@
 
     position: relative; /*pour étoiles*/
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
+
+    -webkit-transition: all 0.3s; /*pour fluidifier le zoom*/
+
 }
 
 .hebergements_pop_bloc:hover {
     box-shadow: 0px 5px 10px #0065fc65;
+
+    transform:scale(1.1);
 }
 
 .etoiles_pop {
@@ -162,7 +170,7 @@
 
 
 
-/*--------------RESPONSIVE - SECTION HEBERgEmENTs---------------*/
+/*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
 
 @media screen and (max-width: 1282px) {    /*quand mis en petit sur pc ou tablette*/
@@ -298,7 +306,138 @@
     .notation_etoile {    /*reglage des étoiles*/
       font-size: 12px;
     }
+}
 
+/*------------------------------------------------- SECTION ACTIVITES --------------------------------------------*/
+.activites {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 40px 0;
+}
+
+.activites a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+
+    -webkit-transition: all 0.3s;
+}
+
+.activites a:hover {
+    box-shadow: 0px 5px 10px #0065fc65;
+    transform:scale(1.04);
+}
+
+.activites h2 {
+    width: 100%;
+}
+
+
+.activites_colonne {    /*bloc de petites images*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+
+.modele1 {
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
+    border-radius: 15px / 15px;
+
+    margin-bottom: 20px;  /*pour le wrap*/
+}
+
+.modele1 img {
+    width: 370px;
+    height: 470px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: center;         /*cadre sur la partie central*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.modele1 p {
+    margin-left: 15px;
+}
+
+
+.modele2 {
+    display: flex;
+    flex-direction: column;
     
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
+    border-radius: 15px / 15px;
 
+    margin-bottom: 20px;  /*pour le wrap*/
+}
+
+.modele2 img {
+    width: 370px;
+    height: 220px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: center;         /*cadre sur la partie central*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.modele2 p {
+    margin-left: 15px;
+}
+
+
+.modele3 {
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
+    border-radius: 15px / 15px;
+
+    margin-bottom: 20px;  /*pour le wrap*/
+}
+
+.modele3 img {
+    width: 370px;
+    height: 170px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: center;         /*cadre sur la partie central*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.modele3 p {
+    margin-left: 15px;
+}
+
+
+.modele4 {
+    display: flex;
+    flex-direction: column;
+  
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
+    border-radius: 15px / 15px;
+
+    margin-bottom: 20px;  /*pour le wrap*/
+}
+
+.modele4 img {
+    width: 370px;
+    height: 140px;
+    object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
+    object-position: 50% 20%;         /*cadre sur la partie central*/
+
+    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
+    border-top-right-radius: 15px 15px;
+}
+
+.modele4 p {
+    margin-left: 15px;
 }
