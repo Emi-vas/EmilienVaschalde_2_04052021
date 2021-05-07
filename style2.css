@@ -29,6 +29,7 @@
 
 .hebergements_marseille_bloc {   /*Bloc enfant*/
     background: white;
+    position: relative;
     max-width: 300px;  /*lié à image*/
 
     margin-top: 20px;
@@ -231,6 +232,10 @@
         left: 360px; 
     }
 
+    .notation_etoile {
+      
+    }
+
     .hebergements_pop_bloc img {
         width: 300px;
         height: 300px;
@@ -269,8 +274,7 @@
         width: 100%;
         max-width: none;
         border-radius: 40px / 40px;
-
-        margin-right: 0;
+        padding-bottom: 55px;        /*pour les étoiles*/
     }
 
     .top {     /*titre*/
@@ -291,7 +295,7 @@
     }
 
     .hebergements_marseille_bloc p {
-        line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/
+        line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
         padding-left: 30px;     /*espace entre texte et bord du bloc*/
     }
 
@@ -302,10 +306,12 @@
     .ligne_prix {
         font-size: 0.8em;
     }
-
     .notation_etoile {    /*reglage des étoiles*/
-      font-size: 12px;
-    }
+        font-size: 28px;
+        position: absolute;    /*a cause du bug*/
+        bottom: 10px;
+      }
+    
 }
 
 /*------------------------------------------------- SECTION ACTIVITES --------------------------------------------*/
