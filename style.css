@@ -3,7 +3,6 @@ html, body {        /*POUR ENLEVEVER LE PIXEL DE MARGE VERSION TEL !*/
     padding:0;
 }
 
-
 .corps_site{
     width: 90%;
 	margin: auto;
@@ -24,7 +23,6 @@ header{
 
 .logo_reservia{
 	width: 140px;
-	height: auto;
 }
 
 header h1{
@@ -54,9 +52,7 @@ header a{
 
 .menu1{             
 	padding: 0 20px;           /*marge entre les menu*/
-    padding-top: 50px;         /*marge bleu*/
-    
-    
+    padding-top: 50px;         /*marge bleu*/ 
 }
 
 .menu1:hover {                         /*bordure bleu*/
@@ -86,7 +82,6 @@ header a{
 
        padding-top: 50px;
     }
-
 
     .logo_reservia{
         
@@ -118,7 +113,6 @@ header a{
         border-bottom: 6px #0065fc solid;
     }
 
-
     .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
         position: absolute;
         top: 85px;
@@ -148,7 +142,6 @@ header a{
 	padding-top: 30px;   /*marge entre bloc recherche et titre*/
 	
 }
-
 
 .icon_gps {                         /*logo gps*/
 	padding: 15px 20px 14px 22px;  /*le gris*/
@@ -191,7 +184,6 @@ button {
     padding-left: 20px;
 	margin-left: 0;       /*enlève l'espace entre bouton et zone de saisie*/
 }
-
 
 button:hover {
 	background-color: #1a75fe;
@@ -249,8 +241,6 @@ button:active {                            /*quand on clic*/
 	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
 }
 
-
-
 .filtre i {     /*icone*/
 	color: #0065FC;
 	background: #DEEBFF;
@@ -262,7 +252,6 @@ button:active {                            /*quand on clic*/
 	
 	border-radius: 50%;      
 }
-
 
 
 .info {
@@ -361,31 +350,29 @@ button:active {                            /*quand on clic*/
 
         border-radius: 60px / 60px;
         border: #e4e4e4 solid 4px;
-        padding-right: 50px;
         
+        padding-right: 50px;   /*marge dans le filtre, à droite du mot*/
+
         margin-bottom: 30px;  /*pour le wrap*/
         margin-right: 35px;     /*espace entre les filtre*/
     }
 
     .bloc_filtre i {
-        padding: 27px 25px;     /*taille bleu claire*/
+        padding: 30px 25px;     /*taille bleu claire*/
         margin-right: 20px;                /*espace entre texte et ico*/
     }
 
-    .bloc_filtre ul {                 /*pour réduire espace entre les filtres et info*/
-        margin-bottom: 0;
-    }
-
-
-
     .info {   /*tout le bloc info*/
-        font-size: 1.9em;
+        font-size: 2.1em;
         margin-left: 50px;    /*same*/
+
+        position: relative;
+        top: -20px;
     }
 
     .info_icon {   /*ajustement bordure icone*/
         border: 3px solid #e4e4e4;
-        padding : 9px 20px 20px 20px;
+        padding : 9px 25px 30px 25px;
     }
 }
 
