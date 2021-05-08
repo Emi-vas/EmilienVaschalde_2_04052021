@@ -347,14 +347,14 @@ button:active {                            /*quand on clic*/
     
     .bloc_filtre {
         flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
-        margin : 40px 50px 20px 50px;
+        margin : 40px 30px 20px 50px;
 
-        font-size: 1.9em;
+        font-size: 2.3em;
     }
 
     .bloc_filtre p {      /*mot filtre*/
        width: 100%;
-       font-size: 1.9em;
+       
     }
 
     .bloc_filtre ul {
@@ -363,13 +363,13 @@ button:active {                            /*quand on clic*/
 
     .bloc_filtre li {
         position: relative;
-        top: -25px;             /*pour remonter les filtre par rapport au mot "filtre"*/
+        top: -20px;             /*pour remonter les filtre par rapport au mot "filtre"*/
 
         border-radius: 60px / 60px;
         border: #e4e4e4 solid 4px;
-        padding:25px 40px 24px 110px;     /*bordure des filtres*/
+        padding-right: 50px;
         
-        margin-bottom: 20px;  /*pour le wrap*/
+        margin-bottom: 30px;  /*pour le wrap*/
         margin-right: 35px;     /*espace entre les filtre*/
     }
 
@@ -377,9 +377,7 @@ button:active {                            /*quand on clic*/
         padding: 27px 25px;     /*taille bleu claire*/
         margin-right: 20px;                /*espace entre texte et ico*/
         
-        position: absolute;   /*decale légerement l'icone*/
-        top:-2px;
-        left: -1px;
+        
    
     }
 
