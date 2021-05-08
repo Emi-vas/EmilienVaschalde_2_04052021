@@ -385,7 +385,7 @@ footer {
     background: #F2F2F2;
     width: 100%;
 
-    padding: 50px 80px;
+    padding: 50px 0px;
 
     display: flex;
 }
@@ -404,8 +404,9 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 
-    width: 30%;
+    width: 20%;
     padding: 0 20px;   /*espace min entre les bloc*/
+    margin-left: 80px;  /*espace à gauche*/
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/
@@ -422,7 +423,11 @@ footer a:hover {
 @media screen and (max-width: 1308px)
 {
     footer {
-        padding: 50px 20px;
+        padding: 50px 30px;
+    }
+
+    .footer_bloc {
+        margin-left: 0;
     }
 }
 
