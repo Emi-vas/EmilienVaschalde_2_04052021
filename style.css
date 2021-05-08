@@ -385,7 +385,7 @@ footer {
     background: #F2F2F2;
     width: 100%;
 
-    padding: 50px 100px;
+    padding: 50px 80px;
 
     display: flex;
 }
@@ -405,6 +405,7 @@ footer a:hover {
     flex-direction: column;
 
     width: 30%;
+    padding: 0 20px;   /*espace min entre les bloc*/
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/
@@ -418,6 +419,13 @@ footer a:hover {
 
 
 /*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
+@media screen and (max-width: 1282px)
+{
+    footer {
+        padding: 50px 20px;
+    }
+}
+
 
 @media screen and (max-device-width:480px) {
     footer {

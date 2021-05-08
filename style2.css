@@ -169,11 +169,16 @@
 
 @media screen and (max-width: 1282px) {    /*quand mis en petit sur pc ou tablette*/
     
+    .corps_site {
+        width: 100%;
+    }
+
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
     }
 
     .hebergements_marseille {
+        margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
     }
 
@@ -247,7 +252,6 @@
     
     .hebergements_marseille {
         font-size: 1.9em;
-        margin-right: 0;
         background: white;
 
         padding-left: 80px;    /*marge sur les cotés*/
