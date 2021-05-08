@@ -71,7 +71,7 @@ header a{
 
 /*-------------------------RESPONSIVE----- HEADER-------------------------*/
 
-@media screen and (max-device-width:480px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
+@media screen and (max-device-width:720px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
      
     .corps_site{                          /*Plein écran*/
         width: 100%;
@@ -280,7 +280,7 @@ button:active {                            /*quand on clic*/
  
 /*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
 
-@media screen and (max-device-width:480px){
+@media screen and (max-device-width:720px){
     
     .section_top {      /*le bloc entier top*/
         width: 90%;
@@ -427,7 +427,7 @@ footer a:hover {
 }
 
 
-@media screen and (max-device-width:480px) {
+@media screen and (max-device-width:720px) {
     footer {
         flex-direction: column;
         padding: 50px 0;

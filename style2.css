@@ -195,7 +195,7 @@
 
 
 
-@media screen and (max-device-width:480px) {     /*sur un tel*/
+@media screen and (max-device-width:720px) {     /*sur un tel*/
     
      /*------- bloc - populaires-------*/
 
@@ -430,7 +430,7 @@
 
 /*------------------------------------------------RESPONSIVE ---- SECTION ACTIVITES----------------------*/
 
-@media screen and (max-device-width:480px) {
+@media screen and (max-device-width:720px) {
     .activites {
         flex-direction: column;
         padding: 0 80px;
