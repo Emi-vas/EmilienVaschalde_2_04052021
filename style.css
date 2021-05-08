@@ -97,7 +97,7 @@ header a{
     header nav{
         position: static;
         width: 100%;
-        font-size: 1.7em;
+        font-size: 1.9em;
     
     }
 
@@ -354,7 +354,7 @@ button:active {                            /*quand on clic*/
 
     .bloc_filtre p {      /*mot filtre*/
        width: 100%;
-       font-size: 1.2em;
+       font-size: 1.9em;
     }
 
     .bloc_filtre ul {

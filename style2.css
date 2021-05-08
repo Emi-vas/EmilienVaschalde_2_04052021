@@ -85,11 +85,6 @@
 	margin-bottom: 7px;  /*espace sous les étoiles ! */
 }
 
-.notation_etoile {    /*reglage des étoiles*/
-    font-size: 13px;
-}
-
-
 /*-----------------------------------Bloc droite - Hebergements pop------------------------*/
 
 .hebergements_pop {
@@ -147,8 +142,6 @@
 }
 
 .etoiles_pop {
-   font-size: 13px;    /*taille étoiles*/
-
    position: absolute;   /*position étoiles*/
    bottom: 5px;
    left: 185px;  
@@ -202,12 +195,12 @@
      /*------- bloc - populaires-------*/
 
     .icone_titre {
-        font-size: 1.5em;
+
         padding-top: 35px;     /*pour aligner avec le titre*/
     }
     
     .titre_pop {
-        font-size: 2.7em;
+        
         margin-bottom: 50px;           /*marge du titre*/
         margin-top: 50px;
     }
@@ -215,6 +208,7 @@
     .hebergements_pop {
         padding-left: 80px;    /*marge sur les cotés*/
         padding-right: 80px;
+        font-size: 1.9em;
     }
 
     .hebergements_pop_bloc {
@@ -227,7 +221,7 @@
     }
 
     .etoiles_pop {
-        font-size: 1.5em;
+        
         bottom: 10px;       /*utilise bien left et bottom comme dans la version pc, sinon conflit*/
         left: 360px; 
     }
@@ -242,14 +236,6 @@
         border-top-left-radius: 40px 40px;
     }
 
-    .ligne_titre_pop {
-        font-size: 37px;
-    }
-
-    .ligne_prix_pop {
-        font-size: 1.8em;
-    }
-
     .hebergements_pop_bloc p {
         padding-right: 50px;   /*marge doite du texte - permet le retour à la ligne*/
     }
@@ -259,6 +245,7 @@
     /*------------------- bloc Marseille----------------*/
     
     .hebergements_marseille {
+        font-size: 1.9em;
         margin-right: 0;
         background: white;
 
@@ -270,11 +257,7 @@
         width: 100%;
         max-width: none;
         border-radius: 40px / 40px;
-        padding-bottom: 55px;        /*pour les étoiles*/
-    }
-
-    .top {     /*titre*/
-        font-size: 2.1em;
+        
     }
 
     .bottom{     /*afficher plus*/
@@ -293,20 +276,8 @@
     .hebergements_marseille_bloc p {
         line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
         padding-left: 30px;     /*espace entre texte et bord du bloc*/
-    }
+    } 
 
-    .ligne_titre {
-        font-size: 1.2em;
-    }
-
-    .ligne_prix {
-        font-size: 0.8em;
-    }
-    .notation_etoile {    /*reglage des étoiles*/
-        font-size: 28px;
-        position: absolute;    /*a cause du bug*/
-        bottom: 10px;
-      }
     
 }
 
@@ -452,7 +423,6 @@
         flex-direction: column;
         padding: 0 80px;
         font-size: 1.9em;
-
     }
 
     .activites p {
