@@ -3,11 +3,10 @@ html, body {        /*POUR ENLEVEVER LE PIXEL DE MARGE VERSION TEL !*/
     padding:0;
 }
 
-
 .corps_site{
     width: 90%;
 	margin: auto;
-	padding: 40px 30px;
+	padding: 20px 30px;
 
 	font-family: 'Raleway', sans-serif;
 }
@@ -19,13 +18,11 @@ header{
 	display: flex;
 	flex-wrap: wrap;  /*retour à la ligne*/
 	justify-content: space-between;
-
-	align-items: center  /*aligne en hauteur logo et menu*/
+    align-items: flex-end;
 }
 
 .logo_reservia{
 	width: 140px;
-	height: auto;
 }
 
 header h1{
@@ -35,13 +32,16 @@ header h1{
     margin-top: 50px;        /*marge sous le logo*/
 }
 
-header p{
+header p{                      /*le sous titre*/
     font-size: 1.2em;
-    color: #505050;
 }
 
-header nav{
+header nav{                 
     display: flex;
+    align-items: flex-end;   /*aligne le nav en bas*/
+    
+    position: relative;      /*remonte le nav pour compenser le logo*/
+    top: -17px;
 }
 
 header a{
@@ -52,11 +52,7 @@ header a{
 
 .menu1{             
 	padding: 0 20px;           /*marge entre les menu*/
-    padding-top: 40px;         /*marge bleu*/
-    
-    position: relative;
-    top: -40px;      /*même que la marge (padding top)*/
-    
+    padding-top: 50px;         /*marge bleu*/ 
 }
 
 .menu1:hover {                         /*bordure bleu*/
@@ -75,7 +71,7 @@ header a{
 
 /*-------------------------RESPONSIVE----- HEADER-------------------------*/
 
-@media screen and (max-device-width:480px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
+@media screen and (max-device-width:720px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
      
     .corps_site{                          /*Plein écran*/
         width: 100%;
@@ -83,8 +79,9 @@ header a{
         margin-right: 0;
         padding-right: 0;
         padding-left: 0;
-    }
 
+       padding-top: 50px;
+    }
 
     .logo_reservia{
         
@@ -92,9 +89,10 @@ header a{
         margin-left: 50px;
     }
 
-    nav{
+    header nav{
+        position: static;
         width: 100%;
-        font-size: 1.7em;
+        font-size: 1.9em;
     
     }
 
@@ -105,9 +103,6 @@ header a{
         padding-top: 60px;     /*marge entre logo et menu*/
 
         border-bottom: 6px solid #F2F2F2;
-
-        top: 0; /*tu annules le décalage que tu as fait pour la bordure*/
-        
     }
 
     .menu1:hover{
@@ -118,16 +113,15 @@ header a{
         border-bottom: 6px #0065fc solid;
     }
 
-
     .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
         position: absolute;
-        top: 75px;
+        top: 85px;
     	right:40px;
     }
 
     header h1{
         font-size: 2.7em;
-        margin-top: 60px;     /*espace sous la bordure bleu*/
+        margin-top: 50px;     /*espace sous la bordure bleu*/
         margin-left: 50px;    /*même que logo si tu veux les aligner*/
     }
 
@@ -144,11 +138,10 @@ header a{
 
 .bloc_recherche {    /*tout le bloc : icone gps + saisie + bouton*/
 	display: flex;
-	align-items: center;
-	margin-top: 30px;
+	
+	padding-top: 30px;   /*marge entre bloc recherche et titre*/
 	
 }
-
 
 .icon_gps {                         /*logo gps*/
 	padding: 15px 20px 14px 22px;  /*le gris*/
@@ -191,7 +184,6 @@ button {
     padding-left: 20px;
 	margin-left: 0;       /*enlève l'espace entre bouton et zone de saisie*/
 }
-
 
 button:hover {
 	background-color: #1a75fe;
@@ -249,8 +241,6 @@ button:active {                            /*quand on clic*/
 	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
 }
 
-
-
 .filtre i {     /*icone*/
 	color: #0065FC;
 	background: #DEEBFF;
@@ -262,7 +252,6 @@ button:active {                            /*quand on clic*/
 	
 	border-radius: 50%;      
 }
-
 
 
 .info {
@@ -277,8 +266,6 @@ button:active {                            /*quand on clic*/
 
 .info_icon {          /*icone info*/
     color: #0065fc;
-    font-size: 0.9em;
-
     padding: 5px 13px 5px 13px;   /*construction bordure en cercle*/
     border: #e4e4e4 solid 1px;
     border-radius: 50%;
@@ -293,14 +280,14 @@ button:active {                            /*quand on clic*/
  
 /*-------------------------RESPONSIVE---- SEcTION TOP (recherche + filtre)---------------------*/
 
-@media screen and (max-device-width:480px){
+@media screen and (max-device-width:720px){
     
     .section_top {      /*le bloc entier top*/
         width: 90%;
     }
 
     .bloc_recherche {
-        margin-left: 50px; /*même que h1 et p du header*/  
+        margin: 0 50px; /*même que h1 et p du header*/  
          
     }
 
@@ -344,15 +331,13 @@ button:active {                            /*quand on clic*/
     
     .bloc_filtre {
         flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
-        margin-left: 50px;   /*idem que plus haut*/
-        margin-top: 50px;    /*espace entre bloc recherche et "filtres"*/
+        margin : 40px 30px 20px 50px;
 
-        font-size: 1.9em;
+        font-size: 2.3em;
     }
 
     .bloc_filtre p {      /*mot filtre*/
-       width: 100%;
-       font-size: 1.2em;
+       width: 100%;   
     }
 
     .bloc_filtre ul {
@@ -361,40 +346,33 @@ button:active {                            /*quand on clic*/
 
     .bloc_filtre li {
         position: relative;
-        top: -25px;             /*pour remonter les filtre par rapport au mot "filtre"*/
+        top: -20px;             /*pour remonter les filtre par rapport au mot "filtre"*/
 
         border-radius: 60px / 60px;
         border: #e4e4e4 solid 4px;
-        padding:25px 40px 24px 110px;     /*bordure des filtres*/
         
-        margin-bottom: 20px;  /*pour le wrap*/
+        padding-right: 50px;   /*marge dans le filtre, à droite du mot*/
+
+        margin-bottom: 30px;  /*pour le wrap*/
         margin-right: 35px;     /*espace entre les filtre*/
     }
 
     .bloc_filtre i {
-        padding: 27px 25px;     /*taille bleu claire*/
+        padding: 30px 25px;     /*taille bleu claire*/
         margin-right: 20px;                /*espace entre texte et ico*/
-        
-        position: absolute;   /*decale légerement l'icone*/
-        top:-2px;
-        left: -1px;
-   
     }
-
-    .bloc_filtre ul {                 /*pour réduire espace entre les filtres et info*/
-        margin-bottom: 0;
-    }
-
-
 
     .info {   /*tout le bloc info*/
-        font-size: 1.9em;
+        font-size: 2.1em;
         margin-left: 50px;    /*same*/
+
+        position: relative;
+        top: -20px;
     }
 
     .info_icon {   /*ajustement bordure icone*/
         border: 3px solid #e4e4e4;
-        padding : 9px 20px 20px 20px;
+        padding : 9px 25px 30px 25px;
     }
 }
 
@@ -407,7 +385,7 @@ footer {
     background: #F2F2F2;
     width: 100%;
 
-    padding: 50px 100px;
+    padding: 50px 0px;
 
     display: flex;
 }
@@ -426,7 +404,9 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 
-    width: 30%;
+    width: 20%;
+    padding: 0 20px;   /*espace min entre les bloc*/
+    margin-left: 80px;  /*espace à gauche*/
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/
@@ -440,15 +420,26 @@ footer a:hover {
 
 
 /*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
+@media screen and (max-width: 1308px)
+{
+    footer {
+        padding: 50px 30px;
+    }
 
-@media screen and (max-device-width:480px) {
+    .footer_bloc {
+      /*  margin-left: 0;*/
+    }
+}
+
+
+@media screen and (max-device-width:720px) {
     footer {
         flex-direction: column;
         padding: 50px 0;
     }
 
     .footer_bloc {
-        font-size: 1.7em;
+        font-size: 1.9em;
         margin: 25px 0;
         padding-left: 100px;
         width: auto;
