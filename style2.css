@@ -267,6 +267,7 @@
     }
 
     .hebergements_marseille_bloc {
+        font-size: 0.8em;
         width: 100%;
         max-width: none;
         border-radius: 40px / 40px;
@@ -274,10 +275,14 @@
         
     }
 
-    .bottom{     /*afficher plus*/
-        margin-top: 30px;
+    .ligne_prix {
+        font-size: 0.65em;
     }
 
+    .bottom{     /*afficher plus*/
+        margin-top: 30px;
+        font-size: 0.8em;
+    }
 
     .hebergements_marseille_img {
         width: 100%;
@@ -288,7 +293,7 @@
     }
 
     .hebergements_marseille_bloc p {
-        line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
+        line-height: 28px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
         padding-left: 30px;     /*espace entre texte et bord du bloc*/
     } 
 
@@ -360,7 +365,6 @@
     margin-left: 15px;
 }
 
-
 .modele2 {
     display: flex;
     flex-direction: column;
@@ -385,7 +389,6 @@
     margin-left: 15px;
 }
 
-
 .modele3 {
     display: flex;
     flex-direction: column;
@@ -409,7 +412,6 @@
 .modele3 p {
     margin-left: 15px;
 }
-
 
 .modele4 {
     display: flex;
@@ -448,7 +450,7 @@
     .activites {
         flex-direction: column;
         padding: 0 80px;
-        font-size: 1.9em;
+        font-size: 2.1em;
     }
 
     .activites p {
@@ -461,7 +463,6 @@
 
         border-top-left-radius: 40px 40px;
         border-top-right-radius: 40px 40px;
-
     }
 
     .modele1, .modele2, .modele3, .modele4 {
