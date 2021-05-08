@@ -167,7 +167,7 @@
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
 
-@media screen and (max-width: 1282px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1308px) {    /*quand mis en petit sur pc ou tablette*/
     
     .corps_site {
         width: 100%;
@@ -178,8 +178,14 @@
     }
 
     .hebergements_marseille {
+        justify-content: space-around;
         margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
+        font-size: 0.9em;
+    }
+
+    .hebergements_marseille_bloc p {
+        line-height: 14px;
     }
 
     .hebergements_pop {
@@ -191,6 +197,8 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    
 }
 
 
