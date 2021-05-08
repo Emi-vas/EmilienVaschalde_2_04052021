@@ -7,7 +7,7 @@ html, body {        /*POUR ENLEVEVER LE PIXEL DE MARGE VERSION TEL !*/
 .corps_site{
     width: 90%;
 	margin: auto;
-	padding: 40px 30px;
+	padding: 20px 30px;
 
 	font-family: 'Raleway', sans-serif;
 }
@@ -19,8 +19,7 @@ header{
 	display: flex;
 	flex-wrap: wrap;  /*retour à la ligne*/
 	justify-content: space-between;
-
-	align-items: center  /*aligne en hauteur logo et menu*/
+    align-items: flex-end;
 }
 
 .logo_reservia{
@@ -35,13 +34,16 @@ header h1{
     margin-top: 50px;        /*marge sous le logo*/
 }
 
-header p{
+header p{                      /*le sous titre*/
     font-size: 1.2em;
-    color: #505050;
 }
 
-header nav{
+header nav{                 
     display: flex;
+    align-items: flex-end;   /*aligne le nav en bas*/
+    
+    position: relative;      /*remonte le nav pour compenser le logo*/
+    top: -17px;
 }
 
 header a{
@@ -52,10 +54,8 @@ header a{
 
 .menu1{             
 	padding: 0 20px;           /*marge entre les menu*/
-    padding-top: 40px;         /*marge bleu*/
+    padding-top: 50px;         /*marge bleu*/
     
-    position: relative;
-    top: -40px;      /*même que la marge (padding top)*/
     
 }
 
@@ -83,6 +83,8 @@ header a{
         margin-right: 0;
         padding-right: 0;
         padding-left: 0;
+
+       padding-top: 50px;
     }
 
 
@@ -92,7 +94,8 @@ header a{
         margin-left: 50px;
     }
 
-    nav{
+    header nav{
+        position: static;
         width: 100%;
         font-size: 1.7em;
     
@@ -121,7 +124,7 @@ header a{
 
     .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
         position: absolute;
-        top: 75px;
+        top: 85px;
     	right:40px;
     }
 
@@ -300,7 +303,7 @@ button:active {                            /*quand on clic*/
     }
 
     .bloc_recherche {
-        margin-left: 50px; /*même que h1 et p du header*/  
+        margin: 0 50px; /*même que h1 et p du header*/  
          
     }
 
@@ -344,8 +347,7 @@ button:active {                            /*quand on clic*/
     
     .bloc_filtre {
         flex-wrap: wrap;  /*met le pas dans version pc, tu perds l'alignement baseline de "filtre" si ça wrap*/
-        margin-left: 50px;   /*idem que plus haut*/
-        margin-top: 50px;    /*espace entre bloc recherche et "filtres"*/
+        margin : 40px 50px 20px 50px;
 
         font-size: 1.9em;
     }
