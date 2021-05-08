@@ -348,8 +348,7 @@ button:active {                            /*quand on clic*/
     }
 
     .bloc_filtre p {      /*mot filtre*/
-       width: 100%;
-       
+       width: 100%;   
     }
 
     .bloc_filtre ul {
