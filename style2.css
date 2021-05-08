@@ -437,6 +437,12 @@
 
 
 /*------------------------------------------------RESPONSIVE ---- SECTION ACTIVITES----------------------*/
+@media screen and (max-width: 1308px) {
+    .activites {
+        justify-content: space-around;
+    }
+}
+
 
 @media screen and (max-device-width:720px) {
     .activites {
