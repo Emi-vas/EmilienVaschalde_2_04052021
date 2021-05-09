@@ -419,8 +419,9 @@ footer a:hover {
 /*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
 @media screen and (max-width: 1308px)
 {
+
     footer {
-        padding: 50px 30px;
+        padding: 50px 0;
     }
 }
 
@@ -428,7 +429,6 @@ footer a:hover {
 @media screen and (max-device-width:720px) {
     footer {
         flex-direction: column;
-        padding: 50px 0;
     }
 
     .footer_bloc:first-of-type {
@@ -439,6 +439,6 @@ footer a:hover {
         font-size: 1.9em;
         margin: 25px 0;
         padding-left: 100px;
-        width: auto;
+        width: auto;  
     }
 }

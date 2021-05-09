@@ -169,9 +169,6 @@
 
 @media screen and (max-width: 1308px) {    /*quand mis en petit sur pc ou tablette*/
     
-    .corps_site {
-        width: 100%;
-    }
 
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
