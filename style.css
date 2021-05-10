@@ -1,4 +1,4 @@
-html, body {        /*POUR ENLEVEVER LE PIXEL DE MARGE VERSION TEL !*/
+html, body {        /*pour enlever pixel de marge version tel*/
     margin:0;
     padding:0;
 }
@@ -454,7 +454,7 @@ footer a:hover {
     .footer_bloc {
         font-size: 1.9em;
         margin: 25px 0;
-        padding-left: 100px;
-        width: auto;  
+        padding-left: 125px;  /*aligné avec texte et pas bloc*/
+        width: auto;  /*enlève le forçage à 27% */
     }
 }
