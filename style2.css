@@ -148,14 +148,6 @@
     
 }
 
-.ligne_titre_pop {       
-    font-size: 1.2em;
-}
-
-.ligne_prix_pop {
-    font-size: 0.9em;
-}
-
 .hebergements_pop_bloc p {
     margin-top: 9px;  /*marge texte et bloc*/
     margin-bottom: 13px;  /*ajustement espace entre les lignes de texte*/
@@ -172,13 +164,14 @@
 
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
+        font-size: 0.9em;
     }
 
     .hebergements_marseille {
         justify-content: space-around;
         margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
-        font-size: 0.9em;
+        
     }
 
     .hebergements_marseille_bloc p {
@@ -204,6 +197,7 @@
     
      /*------- bloc - populaires-------*/
 
+
     .icone_titre {
 
         padding-top: 35px;     /*pour aligner avec le titre*/
@@ -215,10 +209,14 @@
         margin-top: 50px;
     }
 
+    .ligne_titre_tel {      /*hebergement pop : nom de l'hotel*/
+        font-size: 1.15em;
+    }
+
     .hebergements_pop {
         padding-left: 80px;    /*marge sur les cotés*/
         padding-right: 80px;
-        font-size: 1.9em;
+        font-size: 2em;
     }
 
     .hebergements_pop_bloc {
@@ -272,7 +270,7 @@
         
     }
 
-    .ligne_prix {
+    .ligne_prix_tel {
         font-size: 0.65em;
     }
 

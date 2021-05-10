@@ -425,6 +425,22 @@ footer a:hover {
     }
 }
 
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    
+    .footer_bloc:first-of-type {
+        margin-left: 0;
+    }
+    .footer_bloc {
+        margin: 25px 0;
+        padding-left: 100px;
+        width: auto;  
+    }
+}
 
 @media screen and (max-device-width:720px) {
     footer {
