@@ -157,11 +157,33 @@
 
 
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
-
-
-@media screen and (max-width: 1320px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1820px) {    /*petits écrans*/
     
+    .corps_site {
+        width: 95%;
+    }
+    .hebergements_marseille {
+        padding: 15px;             
+        width: 70%;        
+        max-width: 1000px;     /*pour éviter qu'il soit trop grand*/
+    }
 
+    .hebergements_pop {
+
+        padding: 15px;
+        width: 25%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1480px) {    /*quand mis en petit sur pc ou tablette*/
+   
+    .corps_site {         /*on remet la marge normal*/
+        width: 90%;
+    }
+    
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
         font-size: 0.9em;
@@ -171,7 +193,9 @@
         justify-content: space-around;
         margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
-        
+        max-width: none;
+
+        padding: 15px 50px;        /*on remet la marge normal */
     }
 
     .hebergements_marseille_bloc p {
@@ -180,6 +204,7 @@
 
     .hebergements_pop {
         width: auto;
+        padding: 15px 50px;                 /*on remet la marge normal*/
     }
     
     .hebergements_pop_bloc {   
@@ -191,6 +216,10 @@
 
 @media screen and (max-device-width:720px) {     /*sur un tel*/
     
+    .corps_site {
+        width: 100%;
+    }
+
      /*------- bloc - populaires-------*/
 
 
