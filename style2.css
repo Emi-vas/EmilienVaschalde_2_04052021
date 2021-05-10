@@ -148,14 +148,6 @@
     
 }
 
-.ligne_titre_pop {       
-    font-size: 1.2em;
-}
-
-.ligne_prix_pop {
-    font-size: 0.9em;
-}
-
 .hebergements_pop_bloc p {
     margin-top: 9px;  /*marge texte et bloc*/
     margin-bottom: 13px;  /*ajustement espace entre les lignes de texte*/
@@ -167,21 +159,19 @@
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
 
-@media screen and (max-width: 1308px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1320px) {    /*quand mis en petit sur pc ou tablette*/
     
-    .corps_site {
-        width: 100%;
-    }
 
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
+        font-size: 0.9em;
     }
 
     .hebergements_marseille {
         justify-content: space-around;
         margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
-        font-size: 0.9em;
+        
     }
 
     .hebergements_marseille_bloc p {
@@ -196,16 +186,13 @@
         width: 40%;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-
-    
+    } 
 }
-
-
 
 @media screen and (max-device-width:720px) {     /*sur un tel*/
     
      /*------- bloc - populaires-------*/
+
 
     .icone_titre {
 
@@ -218,10 +205,14 @@
         margin-top: 50px;
     }
 
+    .ligne_titre_tel {      /*hebergement pop : nom de l'hotel*/
+        font-size: 1.15em;
+    }
+
     .hebergements_pop {
         padding-left: 80px;    /*marge sur les cotés*/
         padding-right: 80px;
-        font-size: 1.9em;
+        font-size: 2em;
     }
 
     .hebergements_pop_bloc {
@@ -267,17 +258,23 @@
     }
 
     .hebergements_marseille_bloc {
+        font-size: 0.8em;
+        
         width: 100%;
         max-width: none;
-        border-radius: 40px / 40px;
-        padding-bottom: 75px;
         
+        border-radius: 40px / 40px;
+        padding-bottom: 75px;   
+    }
+
+    .ligne_prix_tel {
+        font-size: 0.65em;
     }
 
     .bottom{     /*afficher plus*/
         margin-top: 30px;
+        font-size: 0.8em;
     }
-
 
     .hebergements_marseille_img {
         width: 100%;
@@ -288,7 +285,7 @@
     }
 
     .hebergements_marseille_bloc p {
-        line-height: 17px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
+        line-height: 28px;      /*espace entre les ligne de texte (étoiles comprisent)*/ 
         padding-left: 30px;     /*espace entre texte et bord du bloc*/
     } 
 
@@ -360,7 +357,6 @@
     margin-left: 15px;
 }
 
-
 .modele2 {
     display: flex;
     flex-direction: column;
@@ -385,7 +381,6 @@
     margin-left: 15px;
 }
 
-
 .modele3 {
     display: flex;
     flex-direction: column;
@@ -409,7 +404,6 @@
 .modele3 p {
     margin-left: 15px;
 }
-
 
 .modele4 {
     display: flex;
@@ -448,7 +442,7 @@
     .activites {
         flex-direction: column;
         padding: 0 80px;
-        font-size: 1.9em;
+        font-size: 2.1em;
     }
 
     .activites p {
@@ -461,7 +455,6 @@
 
         border-top-left-radius: 40px 40px;
         border-top-right-radius: 40px 40px;
-
     }
 
     .modele1, .modele2, .modele3, .modele4 {
