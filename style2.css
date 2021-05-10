@@ -159,7 +159,7 @@
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
 
-@media screen and (max-width: 1308px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1320px) {    /*quand mis en petit sur pc ou tablette*/
     
 
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
@@ -186,12 +186,8 @@
         width: 40%;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-
-    
+    } 
 }
-
-
 
 @media screen and (max-device-width:720px) {     /*sur un tel*/
     
@@ -263,11 +259,12 @@
 
     .hebergements_marseille_bloc {
         font-size: 0.8em;
+        
         width: 100%;
         max-width: none;
-        border-radius: 40px / 40px;
-        padding-bottom: 75px;
         
+        border-radius: 40px / 40px;
+        padding-bottom: 75px;   
     }
 
     .ligne_prix_tel {
