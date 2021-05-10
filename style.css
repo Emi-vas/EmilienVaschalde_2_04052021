@@ -6,7 +6,7 @@ html, body {        /*pour enlever pixel de marge version tel*/
 .corps_site{
     width: 90%;
 	margin: auto;
-	padding: 20px 30px;
+	padding: 20px 0;
 
 	font-family: 'Raleway', sans-serif;
 }
@@ -71,16 +71,42 @@ header a{
 
 /*-------------------------RESPONSIVE----- HEADER-------------------------*/
 
+@media screen and (max-width:720px){   /*petits écrans*/
+
+    header nav{
+        position: static;
+        width: 100%;
+    }
+
+    .menu1{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px; /*marge pour la bordure bleu*/
+        padding-top: 60px;     /*marge entre logo et menu*/
+
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .menu1:hover{
+        border: none;
+    }
+
+    .menu1:hover{
+        border-bottom: 3px #0065fc solid;
+    }
+
+    .menu2{                         /*sort le menu du bloc nav pour le mettre en haut à droite*/
+        position: absolute;
+        top: 50px;
+    	right:40px;
+    }
+}
+
 @media screen and (max-device-width:720px){   /*on cible mieux les tel et evite que ça utilise cette config pour les tablettes*/
      
     .corps_site{                          /*Plein écran*/
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-right: 0;
-        padding-left: 0;
-
-       padding-top: 50px;
+        padding-top: 50px;
     }
 
     .logo_reservia{  
