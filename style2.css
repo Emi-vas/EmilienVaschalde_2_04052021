@@ -223,7 +223,7 @@
 @media screen and (max-width: 1220px) {    /*tablette*/
    
     .corps_site {         /*on remet la marge normal*/
-        width: 90%;
+        width: 95%;
     }
     
     .titre_pop {
@@ -266,7 +266,7 @@
     }
     
     .hebergements_pop_bloc {   
-        width: 32%;
+        width: 31%;
         min-width: 265px;
         margin-bottom: 10px;
     } 
@@ -275,7 +275,7 @@
 @media screen and (max-width: 1000px) {
     .hebergements_pop_bloc {   
         width: 350px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .hebergements_pop {
