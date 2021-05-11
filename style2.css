@@ -204,15 +204,23 @@
 
     .hebergements_pop {
         padding: 10px 20px 0px 20px;
-        min-width: 300px;
+        min-width: 290px;
     }
 
     .hebergements_pop_bloc p {
         padding-right: 5px;
     }
+
+    .hebergements_pop_bloc img {
+        margin-right: 15px;
+    }
+
+    .etoiles_pop {
+        left: 150px;   /*pck tu as réduit la marge entre image et texte*/
+    }
 }
 
-@media screen and (max-width: 1240px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1220px) {    /*tablette*/
    
     .corps_site {         /*on remet la marge normal*/
         width: 90%;
@@ -223,16 +231,24 @@
         width: 93%;            /*position de la fin*/
     }
 
+    .top {
+        padding-left: 10px; /*additionne les padding pour aligner les titres*/
+    }
+
+    .bottom {
+        padding-left: 10px; /*additionne les padding pour aligner les titres*/
+    }
+
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
-        font-size: 0.9em;
     }
 
     .hebergements_marseille {
-        justify-content: space-around;
+        justify-content: space-between;
         margin-right: 0;   /*pour que bloc pop et bloc marseille aient la même taille*/
         width: auto;
         max-width: none;
+        min-width: 0;
 
         padding: 20px 30px 0px 40px;       /*on remet la marge normal */
     }
@@ -250,14 +266,33 @@
     }
     
     .hebergements_pop_bloc {   
-        width: 31%;
-        min-width: 220px;
+        width: 32%;
+        min-width: 265px;
         margin-bottom: 10px;
     } 
 }
 
+@media screen and (max-width: 1000px) {
+    .hebergements_pop_bloc {   
+        width: 350px;
+        padding-bottom: 10px;
+    }
 
+    .hebergements_pop {
+        justify-content: space-around;
+    }
 
+    .hebergements_marseille {
+        justify-content: space-around;
+        padding: 20px;        /*comme le bloc pop*/
+    }
+
+    .top, .bottom {       /*comme le titre pop*/
+        width: 93%;
+        padding-left: 30px;
+    }
+
+}
 
 @media screen and (max-device-width:720px) {     /*sur un tel*/
     
