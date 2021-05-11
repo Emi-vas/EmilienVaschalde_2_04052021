@@ -11,38 +11,40 @@
 }
 
 #hebergements h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 /*--------------------bloc de gauche - hebergement Marseille-------------------------*/
 
 
 .hebergements_marseille {  /*bloc de gauche*/
     display: flex;
-    justify-content: space-between;   /*Possible de mettre en flex start, ca dépend où tu veux le blanc (droite ou entre les images) - le top c'est around mais 
-                                        tu perds alignement avec "hebergement" ---> voir avec client*/
+    justify-content: space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
 
     background: #F2F2F2;
-    padding: 20px 40px 0px 40px;    /*marge des contours du bloc*/
+    padding: 20px 30px 0px 40px;    /*marge des contours du bloc - tu enlève 10 à droite à cause du margin right du bloc*/
     margin-top : 30px;       /*espace entre info et bloc*/
     margin-right: 10px;      /*espace min entre les blocs "hebergement marseille" et "les plus pop"*/
     
     width: 60%;
-    border-radius: 15px / 15px;
+    min-width: 820px;
+    border-radius: 20px / 20px;
 }
 
 .hebergements_marseille_bloc {   /*Bloc enfant*/
     background: white;
     position: relative;
-    max-width: 230px;  /*lié à image*/
+    max-width: 250px;  /*lié à image*/
 
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 10px;   /*espace avant de wrap*/
     
     padding: 5px;       /*espace entre image et bloc*/
+    padding-bottom: 10px;
     	
-    border-radius: 15px / 15px;
+    border-radius: 20px / 20px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;
     
     -webkit-transition: all 0.3s;
@@ -54,28 +56,29 @@
 }
 
 .hebergements_marseille_img {
-    width: 230px;                  /*defini une taille pour l'object fit*/
-    height: 110px;
+    width: 250px;                  /*defini une taille pour l'object fit*/
+    height: 120px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: left;         /*cadre sur la partie gauche*/
 
-    border-top-left-radius: 15px 15px;  /*bordure demi-cercle*/
-    border-top-right-radius: 15px 15px;
+    border-top-left-radius: 20px 20px;  /*bordure demi-cercle*/
+    border-top-right-radius: 20px 20px;
 }
 
 .top {  /*le texte "hebergement Marseille*/
-    width: 100%;
-    font-size: 1.4em;
+    width: 90%;
+    margin-bottom: 5px;
 }
 
 .bottom {    /*Le texte "afficher plus"*/
     width: 100%;
-    font-size: 1.2em;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .ligne_titre {             /*ajustement des polices*/
     font-size: 1em;
+    margin-top: 10px;   /*rapprocher de le l'image*/
 }
 
 .ligne_prix{
@@ -83,6 +86,9 @@
 }
 
 .notation_etoile {
+   /* position: absolute;
+  /*  bottom: 9px;
+   /* left: 4px;*/
     font-size: 0.9em;
 }
 
@@ -90,13 +96,14 @@
     line-height: 8px;
 	
     padding-left: 10px;  /*texte et étoiles*/
-	margin-bottom: 5px;  /*espace sous les étoiles ! */
+	margin-bottom: 0px;  /*espace sous les étoiles ! */
 }
 
 /*-----------------------------------Bloc droite - Hebergements pop------------------------*/
 .titre_pop {
     display: flex;
     justify-content: space-between;
+    align-items : baseline;
     margin-bottom: 10px;
 }
 
@@ -107,16 +114,14 @@
     flex-direction: column;
 
     width: 25%;
-    min-width: 0;     
+    min-width: 330px;     
 
     background: #F2F2F2;
-    border-radius: 15px / 15px;
+    border-radius: 20px / 20px;
     padding: 20px 40px 0px 40px;                      /*coutour inte, si tu modifies, touche aussi le bloc hebergement*/
 }
 
-.hebergements_pop i {          /*espace pour icon en face de "les plus pop" mais ca sert aussi à mettre les étoiles en bas*/
-	margin-top: 18px;       /*size géré dans le code html pour pas géner les étoiles*/	
-}
+
 
 .hebergements_pop_bloc img{
     width: 130px;
@@ -126,8 +131,8 @@
     margin-right: 30px;     /*espace avec texte*/
     float: left;
 
-    border-bottom-left-radius: 15px 15px;
-    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 20px 20px;
+    border-top-left-radius: 20px 20px;
  }
 
  .hebergements_pop_bloc{
@@ -135,10 +140,9 @@
     margin-bottom: 40px;                          /*aligne bloc avec titre "les plus pop"*/
 
     max-height: 140px;        /*même que image*/
-    min-width: 200px;
 
     background: white;
-    border-radius: 15px / 15px;
+    border-radius: 20px / 20px;
 
     position: relative; /*pour étoiles*/
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;  
@@ -168,39 +172,51 @@
 .hebergements_pop_bloc p {
     margin-top: 9px;  /*marge texte et bloc*/
     margin-bottom: 13px;  /*ajustement espace entre les lignes de texte*/
-    padding-right: 30px;   /*marge doite du texte - permet le retour à la ligne*/
+    padding-right: 15px;   /*marge doite du texte - permet le retour à la ligne*/
 }
 
 
 
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
-@media screen and (max-width: 1820px) {    /*petits écrans*/
+
+@media screen and (max-width: 1750px) {    /*petits écrans*/
     
+    .corps_site {
+        width: 85%;
+    }
+    .hebergements_marseille {           
+        max-width: 950px;     /*pour éviter qu'il soit trop grand*/
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
     .corps_site {
         width: 95%;
     }
+}
+
+@media screen and (max-width: 1400px) {
+    
     .hebergements_marseille {
-        padding: 15px;             
-        width: 70%;        
-        max-width: 1000px;     /*pour éviter qu'il soit trop grand*/
+        padding: 10px 10px 0px 20px;
     }
 
     .hebergements_pop {
-
-        padding: 15px;
-        width: 25%;
+        padding: 10px 20px 0px 20px;
     }
-
 }
 
-
-
-@media screen and (max-width: 1480px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1200px) {    /*quand mis en petit sur pc ou tablette*/
    
     .corps_site {         /*on remet la marge normal*/
         width: 90%;
     }
     
+    .titre_pop {
+        width: 900px;
+    }
+
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
         flex-direction: column-reverse; 
         font-size: 0.9em;
@@ -212,24 +228,39 @@
         width: auto;
         max-width: none;
 
-        padding: 15px 50px;        /*on remet la marge normal */
+        padding: 20px 30px 0px 40px;       /*on remet la marge normal */
     }
 
-    .hebergements_marseille_bloc p {
-        line-height: 14px;
+    .hebergements_marseille_bloc {
+        min-width: 180px;
     }
+    
+
+    .hebergements_marseille_bloc p {
+        line-height: 12px;
+       
+        
+    }
+
 
     .hebergements_pop {
         width: auto;
-        padding: 15px 50px;                 /*on remet la marge normal*/
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 40px 0px 40px;                 /*on remet la marge normal*/
     }
     
     .hebergements_pop_bloc {   
-        width: 40%;
+        width: 30%;
+        min-width: 200px;
         margin-top: 10px;
         margin-bottom: 10px;
     } 
 }
+
+
+
 
 @media screen and (max-device-width:720px) {     /*sur un tel*/
     
@@ -368,6 +399,7 @@
 }
 
 .activites h2 {
+    font-size: 1.4em;
     width: 100%;
 }
 
