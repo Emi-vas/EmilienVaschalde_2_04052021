@@ -204,17 +204,23 @@
 
     .hebergements_pop {
         padding: 10px 20px 0px 20px;
+        min-width: 300px;
+    }
+
+    .hebergements_pop_bloc p {
+        padding-right: 5px;
     }
 }
 
-@media screen and (max-width: 1200px) {    /*quand mis en petit sur pc ou tablette*/
+@media screen and (max-width: 1240px) {    /*quand mis en petit sur pc ou tablette*/
    
     .corps_site {         /*on remet la marge normal*/
         width: 90%;
     }
     
     .titre_pop {
-        width: 900px;
+        padding-left: 30px ;  /*position du début du titre*/
+        width: 93%;            /*position de la fin*/
     }
 
     #hebergements {                               /*mise en colonne des blocs : populaire first*/
@@ -234,27 +240,18 @@
     .hebergements_marseille_bloc {
         min-width: 180px;
     }
-    
-
-    .hebergements_marseille_bloc p {
-        line-height: 12px;
-       
-        
-    }
-
 
     .hebergements_pop {
         width: auto;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 20px 40px 0px 40px;                 /*on remet la marge normal*/
+        padding: 20px 20px 20px 20px;                 /*on remet la marge normal*/
     }
     
     .hebergements_pop_bloc {   
-        width: 30%;
-        min-width: 200px;
-        margin-top: 10px;
+        width: 31%;
+        min-width: 220px;
         margin-bottom: 10px;
     } 
 }
