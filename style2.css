@@ -302,16 +302,12 @@
 
      /*------- bloc - populaires-------*/
 
-
-    .icone_titre {
-
-        padding-top: 35px;     /*pour aligner avec le titre*/
-    }
-    
     .titre_pop {
-        
-        margin-bottom: 50px;           /*marge du titre*/
+        width: 100%;
         margin-top: 50px;
+        padding: 0;
+
+        font-size: 1.2em;
     }
 
     .ligne_titre_tel {      /*hebergement pop : nom de l'hotel*/
@@ -359,7 +355,7 @@
     /*------------------- bloc Marseille----------------*/
     
     .hebergements_marseille {
-        font-size: 1.9em;
+        font-size: 2em;
         background: white;
 
         padding-left: 80px;    /*marge sur les cotés*/
@@ -383,6 +379,13 @@
     .bottom{     /*afficher plus*/
         margin-top: 30px;
         font-size: 0.8em;
+    }
+
+    .top {
+        padding :0;
+        width: 100%;
+
+        margin-bottom: 40px;
     }
 
     .hebergements_marseille_img {
@@ -420,7 +423,7 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
+    
 
     -webkit-transition: all 0.3s;
 }
@@ -454,8 +457,8 @@
 }
 
 .modele1 img {
-    width: 370px;
-    height: 470px;
+    width: 310px;
+    height: 420px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: center;         /*cadre sur la partie central*/
 
@@ -478,8 +481,8 @@
 }
 
 .modele2 img {
-    width: 370px;
-    height: 220px;
+    width: 310px;
+    height: 200px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: center;         /*cadre sur la partie central*/
 
@@ -502,8 +505,8 @@
 }
 
 .modele3 img {
-    width: 370px;
-    height: 180px;
+    width: 310px;
+    height: 150px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: center;         /*cadre sur la partie central*/
 
@@ -526,8 +529,8 @@
 }
 
 .modele4 img {
-    width: 370px;
-    height: 140px;
+    width: 310px;
+    height: 120px;
     object-fit: cover;	           /*prend qu'une partie de l'image (zoom)*/
     object-position: 50% 20%;         /*cadre sur la partie central*/
 
@@ -541,7 +544,7 @@
 
 
 /*------------------------------------------------RESPONSIVE ---- SECTION ACTIVITES----------------------*/
-@media screen and (max-width: 1308px) {
+@media screen and (max-width: 1350px) {
     .activites {
         justify-content: space-around;
     }
