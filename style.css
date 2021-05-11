@@ -4,7 +4,7 @@ html, body {        /*pour enlever pixel de marge version tel*/
 }
 
 .corps_site{
-    width: 90%;
+    width: 75%;
 	margin: auto;
 	padding: 20px 0;
 
@@ -27,7 +27,7 @@ header{
 
 header h1{
     width: 100%;            /*force retour à la ligne*/
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 0;       /*reduit l'espace entre titre et sous titre*/
     margin-top: 50px;        /*marge sous le logo*/
 }
@@ -45,7 +45,7 @@ header nav{
 }
 
 header a{
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
     color: #505050;
 }
@@ -398,37 +398,39 @@ footer {
     background: #F2F2F2;
     width: 100%;
 
-    padding: 50px 0px;
+    padding: 20px 0px;
 
     display: flex;
+    justify-content: space-around;
+}
+
+.corps_footer {
+    width: 75%;
+    display: flex;
+
 }
 
 footer a {
     color: black;
     text-decoration: none;
-    font-size: 1.2em;
+
 }
 
 footer a:hover {
     color: #0065FC;
 }
 
-.footer_bloc:first-of-type {
-    margin-left: 80px;  /*espace à gauche*/
-}
-
 .footer_bloc {
     display: flex;
     flex-direction: column;
-
-    width: 27%;
-    padding: 0 20px;   /*espace min entre les bloc*/
+    margin-right: 20%;
+    margin-bottom: 40px;
     
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/
     font-weight: bold;
-    padding: 27px 0;
+    padding: 15px 0;
 }
 
 .footer_bloc a {
@@ -437,44 +439,43 @@ footer a:hover {
 
 
 /*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
-@media screen and (max-width: 1308px)
-{
-
-    footer {
-        padding: 50px 0;
+@media screen and (max-width: 1750px) {    /*petits écrans*/
+    
+    .corps_footer {
+        width: 85%;
     }
 }
 
-@media screen and (max-width: 900px) {
-    footer {
-        padding: 0;
-        flex-direction: column;
+@media screen and (max-width: 1500px) {
+
+    .corps_footer {
+        width: 90%;      /*largeur*/
+        justify-content: space-around;  /*pemet de mieux gérer le responsive mais change l'alignement*/
     }
 
-    
-    .footer_bloc:first-of-type {
-        margin-left: 0;
-    }
     .footer_bloc {
-        margin: 25px 0;
-        padding-left: 100px;
-        width: auto;  
+        margin-right: 0;   /*plus besoin de marge car "space-around"*/
     }
+}
+
+@media screen and (max-width: 720px) {
+    .corps_footer {
+        width: 100%;  /*pour avoir la marge exacte*/
+       flex-direction: column;
+
+
+       margin-left: 50px;  /*alignement avec texte du bloc (compte les marges) */
+   }
+
 }
 
 @media screen and (max-device-width:720px) {
-    footer {
-        flex-direction: column;
-    }
+   
+    .corps_footer {
+        width: 100%;  /*pour avoir la marge exacte*/
+       flex-direction: column;
+       font-size: 2em;
 
-    .footer_bloc:first-of-type {
-        margin-left: 0;
-    }
-
-    .footer_bloc {
-        font-size: 1.9em;
-        margin: 25px 0;
-        padding-left: 125px;  /*aligné avec texte et pas bloc*/
-        width: auto;  /*enlève le forçage à 27% */
-    }
+       margin-left: 125px;  /*alignement avec texte du bloc (compte les marges) */
+   }
 }
