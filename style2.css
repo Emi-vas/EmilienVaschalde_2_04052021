@@ -23,7 +23,7 @@
     flex-wrap: wrap;
 
     background: #F2F2F2;
-    padding: 15px 50px 15px 50px;   /*marge des contours du bloc*/
+    padding: 20px 40px 0px 40px;    /*marge des contours du bloc*/
     margin-top : 30px;       /*espace entre info et bloc*/
     margin-right: 10px;      /*espace min entre les blocs "hebergement marseille" et "les plus pop"*/
     
@@ -40,7 +40,7 @@
     margin-bottom: 20px;
     margin-right: 10px;   /*espace avant de wrap*/
     
-    padding: 3px;       /*espace entre image et bloc*/
+    padding: 5px;       /*espace entre image et bloc*/
     	
     border-radius: 15px / 15px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15) ;
@@ -97,6 +97,7 @@
 .titre_pop {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .hebergements_pop {
@@ -105,12 +106,12 @@
     margin-top: 30px; /*pck elle est aussi sur bloc hebergement - si tu mets pas t'es plus aligné*/
     flex-direction: column;
 
-    width: 23%;
+    width: 25%;
     min-width: 0;     
 
     background: #F2F2F2;
     border-radius: 15px / 15px;
-    padding: 15px 50px 15px 50px;                      /*coutour inte, si tu modifies, touche aussi le bloc hebergement*/
+    padding: 20px 40px 0px 40px;                      /*coutour inte, si tu modifies, touche aussi le bloc hebergement*/
 }
 
 .hebergements_pop i {          /*espace pour icon en face de "les plus pop" mais ca sert aussi à mettre les étoiles en bas*/
@@ -119,7 +120,7 @@
 
 .hebergements_pop_bloc img{
     width: 130px;
-    height: 130px;
+    height: 140px;
     object-fit: cover;
 
     margin-right: 30px;     /*espace avec texte*/
@@ -130,14 +131,10 @@
  }
 
  .hebergements_pop_bloc{
-    padding: 3px;                            /*marge fine autour du bloc*/
-    margin-bottom: 30px;                          /*aligne bloc avec titre "les plus pop"*/
-    
-    position: relative;
-    left: 0;
-    right: 0;
+    padding: 5px;                            /*marge fine autour du bloc*/
+    margin-bottom: 40px;                          /*aligne bloc avec titre "les plus pop"*/
 
-    max-height: 130px;        /*même que image*/
+    max-height: 140px;        /*même que image*/
     min-width: 200px;
 
     background: white;
@@ -159,8 +156,8 @@
 .etoiles_pop {
    font-size: 0.9em;
    position: absolute;   /*position étoiles*/
-   bottom: 5px;
-   left: 185px;  
+   bottom: 0;
+   left: 165px;  
     
 }
 
