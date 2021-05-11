@@ -4,7 +4,7 @@ html, body {        /*pour enlever pixel de marge version tel*/
 }
 
 .corps_site{
-    width: 90%;
+    width: 75%;
 	margin: auto;
 	padding: 20px 0;
 
@@ -27,7 +27,7 @@ header{
 
 header h1{
     width: 100%;            /*force retour à la ligne*/
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 0;       /*reduit l'espace entre titre et sous titre*/
     margin-top: 50px;        /*marge sous le logo*/
 }
@@ -45,7 +45,7 @@ header nav{
 }
 
 header a{
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
     color: #505050;
 }
