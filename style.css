@@ -1,17 +1,19 @@
 html, body {        /*pour enlever pixel de marge version tel*/
     margin:0;
     padding:0;
+
+    font-family: 'Raleway', sans-serif;
 }
 
 .corps_site{
     width: 75%;
 	margin: auto;
 	padding: 20px 0;
-
-	font-family: 'Raleway', sans-serif;
 }
 
-
+.ghost {
+    display: none;
+}
 
 /*--------------------HEADER---------------------------*/
 header{
@@ -393,27 +395,23 @@ button:active {                            /*quand on clic*/
 /*-----------------------------------------------------FOOTER-------------------------------------------------*/
 
 footer {
-    
-    font-family: 'Raleway', sans-serif;
     background: #F2F2F2;
     width: 100%;
 
     padding: 20px 0px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .corps_footer {
     width: 75%;
     display: flex;
-
 }
 
 footer a {
     color: black;
     text-decoration: none;
-
 }
 
 footer a:hover {
@@ -425,7 +423,6 @@ footer a:hover {
     flex-direction: column;
     margin-right: 20%;
     margin-bottom: 40px;
-    
 }
 
 .footer_bloc a:first-of-type {   /*première ligne*/

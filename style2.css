@@ -13,6 +13,14 @@
 #hebergements h2 {
     font-size: 1.3em;
 }
+
+.color_blue { 
+    color: #0065fc;
+}
+
+.color_grey {
+    color: #e4e4e4;
+}
 /*--------------------bloc de gauche - hebergement Marseille-------------------------*/
 
 
@@ -86,9 +94,6 @@
 }
 
 .notation_etoile {
-   /* position: absolute;
-  /*  bottom: 9px;
-   /* left: 4px;*/
     font-size: 0.9em;
 }
 
@@ -443,6 +448,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    margin: 0 5px;
 }
 
 
@@ -563,7 +569,7 @@
     }
 
     .modele4 img, .modele3 img, .modele2 img, .modele1 img {
-        width: 100%;
+        width: auto;
         height: 310px;
 
         border-top-left-radius: 40px 40px;
