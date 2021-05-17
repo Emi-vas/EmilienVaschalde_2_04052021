@@ -260,6 +260,7 @@ button:active {                            /*quand on clic*/
 	border: #0065fc solid 2px;
 	color: #ffffff; 
 	background-color: #0065fc;                   /*bleu*/
+    cursor: pointer;
 	
 	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
 }
