@@ -309,7 +309,7 @@
 
     .titre_pop {
         width: 100%;
-        margin-top: 50px;
+        margin : 20px 0;
         padding: 0;
 
         font-size: 1.2em;
@@ -566,6 +566,7 @@
 
     .activites p {
         padding: 10px 30px;
+        font-size: 1.1em;
     }
 
     .modele4 img, .modele3 img, .modele2 img, .modele1 img {
