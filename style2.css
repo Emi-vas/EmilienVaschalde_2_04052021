@@ -13,6 +13,14 @@
 #hebergements h2 {
     font-size: 1.3em;
 }
+
+.color_blue { 
+    color: #0065fc;
+}
+
+.color_grey {
+    color: #e4e4e4;
+}
 /*--------------------bloc de gauche - hebergement Marseille-------------------------*/
 
 
@@ -86,9 +94,6 @@
 }
 
 .notation_etoile {
-   /* position: absolute;
-  /*  bottom: 9px;
-   /* left: 4px;*/
     font-size: 0.9em;
 }
 
@@ -179,7 +184,7 @@
 
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
-@media screen and (max-width: 1750px) {    /*petits écrans*/
+@media (max-width: 1750px) {    /*petits écrans*/
     
     .corps_site {
         width: 85%;
@@ -189,14 +194,14 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 
     .corps_site {
         width: 95%;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
     
     .hebergements_marseille {
         padding: 10px 10px 0px 20px;
@@ -220,7 +225,7 @@
     }
 }
 
-@media screen and (max-width: 1220px) {    /*tablette*/
+@media (max-width: 1220px) {    /*tablette*/
    
     .corps_site {         /*on remet la marge normal*/
         width: 95%;
@@ -272,7 +277,7 @@
     } 
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .hebergements_pop_bloc {   
         width: 350px;
         margin-bottom: 10px;
@@ -304,7 +309,7 @@
 
     .titre_pop {
         width: 100%;
-        margin-top: 50px;
+        margin : 20px 0;
         padding: 0;
 
         font-size: 1.2em;
@@ -443,6 +448,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    margin: 0 5px;
 }
 
 
@@ -544,7 +550,7 @@
 
 
 /*------------------------------------------------RESPONSIVE ---- SECTION ACTIVITES----------------------*/
-@media screen and (max-width: 1350px) {
+@media (max-width: 1350px) {
     .activites {
         justify-content: space-around;
     }
@@ -560,10 +566,11 @@
 
     .activites p {
         padding: 10px 30px;
+        font-size: 1.1em;
     }
 
     .modele4 img, .modele3 img, .modele2 img, .modele1 img {
-        width: 100%;
+        width: auto;
         height: 310px;
 
         border-top-left-radius: 40px 40px;
