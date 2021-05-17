@@ -436,14 +436,14 @@ footer a:hover {
 
 
 /*--------------------------------------------FOOTER - RESPONSIVE--------------------------*/
-@media screen and (max-width: 1750px) {    /*petits écrans*/
+@media (max-width: 1750px) {    /*petits écrans*/
     
     .corps_footer {
         width: 85%;
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 
     .corps_footer {
         width: 90%;      /*largeur*/
@@ -455,7 +455,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
     .corps_footer {
         width: 100%;  /*pour avoir la marge exacte*/
        flex-direction: column;

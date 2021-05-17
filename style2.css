@@ -184,7 +184,7 @@
 
 /*--------------------------------------------------RESPONSIVE - SECTION HEBERgEmENTs------------------------------------------------*/
 
-@media screen and (max-width: 1750px) {    /*petits écrans*/
+@media (max-width: 1750px) {    /*petits écrans*/
     
     .corps_site {
         width: 85%;
@@ -194,14 +194,14 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 
     .corps_site {
         width: 95%;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
     
     .hebergements_marseille {
         padding: 10px 10px 0px 20px;
@@ -225,7 +225,7 @@
     }
 }
 
-@media screen and (max-width: 1220px) {    /*tablette*/
+@media (max-width: 1220px) {    /*tablette*/
    
     .corps_site {         /*on remet la marge normal*/
         width: 95%;
@@ -277,7 +277,7 @@
     } 
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .hebergements_pop_bloc {   
         width: 350px;
         margin-bottom: 10px;
@@ -550,7 +550,7 @@
 
 
 /*------------------------------------------------RESPONSIVE ---- SECTION ACTIVITES----------------------*/
-@media screen and (max-width: 1350px) {
+@media (max-width: 1350px) {
     .activites {
         justify-content: space-around;
     }
