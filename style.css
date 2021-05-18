@@ -60,6 +60,7 @@ header a{
 .menu1:hover {                         /*bordure bleu*/
     border-top: 2px solid #0065fc;
 	color: #0065fc;
+    padding-top: 48px;         /*pour éviter que ça bouge*/
 }
  
 .menu2{
@@ -263,6 +264,11 @@ button:active {                            /*quand on clic*/
     cursor: pointer;
 	
 	box-shadow: 1px 1px 5px #000000;  /*bleu clair*/
+}
+
+.filtre li:hover i {
+    transform: rotate(1turn);
+    transition: transform 1000ms;
 }
 
 .filtre i {     /*icone*/
